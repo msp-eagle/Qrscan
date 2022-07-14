@@ -23,228 +23,404 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d6edca5-3968-4d1e-bff4-2077132d5e1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Qrscan_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Qrscan_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/brta_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/brta_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/brta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Qrscan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcmail_jdk14_138.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcprov_jdk14_138.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_albfernandez_juniversalchardet_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_librepdf_openpdf_1_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_03.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_11_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_4_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_java8_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ejb_javax_ejb_api_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_jexl_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk14_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk14_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_56.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bctsp_jdk14_1_38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_poi_1_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_olap4j_olap4j_0_9_7_309_JS_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_3_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/ApplicationInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/BeanConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/DBConfigForSave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/DBConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/audit/model/QrAudit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/audit/repo/QrAuditRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/bean/ConstantValues.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/bean/QrCodeBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/controller/ApiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/NewQrCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/NewSubject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/QrCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/QrCodeOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/Sign.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/Subject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/model/Contactusmessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/model/QrModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/repository/QrRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QRGenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QRGenServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QrRepoImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.springframework.ide.eclipse.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.springBeans" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Conf/Mail.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Conf/Mail1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Conf/sms_rsb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/img/brta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Qrscan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoice.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/HikariCP-3.4.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/aspectjweaver-1.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/byte-buddy-1.10.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/c3p0-0.9.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/commons-digester-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dom4j-2.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ecj-3.18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/el-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hibernate-core-5.4.20.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/istack-commons-runtime-3.0.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-annotations-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-core-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-databind-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-datatype-jdk8-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-datatype-jsr310-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jackson-module-parameter-names-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.activation-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.el-3.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.persistence-api-2.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.transaction-api-1.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.xml.bind-api-2.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jandex-2.1.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jasperreports-fonts-4.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ejb-api-3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.transaction-api-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-runtime-2.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jcl-over-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/log4j-1.2.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/log4j-api-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/log4j-to-slf4j-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opencsv-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/poiji-3.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/postgresql-42.2.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/snakeyaml-1.26.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-aop-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-aspects-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-beans-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-autoconfigure-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-devtools-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-aop-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-data-jpa-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-jdbc-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-json-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-logging-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-tomcat-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-boot-starter-web-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-cloud-starter-openfeign-2.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-context-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-core-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-data-commons-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-data-jpa-2.3.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-expression-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-jcl-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-jdbc-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-orm-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-tx-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-web-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/spring-webmvc-5.2.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-api-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-autotag-core-runtime-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-core-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-jsp-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-request-api-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-request-jsp-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-request-servlet-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-servlet-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tiles-template-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tomcat-embed-core-9.0.37.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tomcat-embed-el-9.0.37.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tomcat-embed-jasper-9.0.37.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tomcat-embed-websocket-9.0.37.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/txw2-2.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog$Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons$SignatureDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$MyEncryptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog$MyEncryptionHandler2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption$SignatureDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsEncryption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog$Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial$SignatureDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/DemoButtonsSerial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog$Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/DemoButtons/SignatureDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/CplusplusRuntimeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/JniRuntimeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/NativeObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/RuntimeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Component$ComponentFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/DeviceRemovedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/ErrorCodeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/IInterfaceHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/IOErrorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/ITabletHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/InterfaceHandler$InterfaceDispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/InterfaceHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/InterfaceQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/NativeInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/NotConnectedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/NotSupportedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Predicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/AsymmetricKeyType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/AsymmetricPaddingType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/Capability.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/DHbase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/DHprime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/DevicePublicKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EncodingFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EncodingMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EncryptionCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EncryptionCommandNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EncryptionCommandParameterBlockIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EncryptionStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/EndImageDataFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ErrorCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ErrorCodeRSA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/HandwritingDisplayArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/HandwritingThicknessColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/HandwritingThicknessColor24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/IReportHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ImageDataBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/Information.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/InkThreshold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/InkingMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenDataEncrypted.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenDataEncryptedOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenDataOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenDataOptionMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenDataTimeCountSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PenDataTimeCountSequenceEncrypted.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/Protocol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ProtocolHelper$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ProtocolHelper$Clip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ProtocolHelper$Scale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ProtocolHelper$SendEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ProtocolHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/PublicKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ReportHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ReportId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/ResetFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/StatusCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/StatusCodeRSA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Protocol/SymmetricKeyType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Report.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/STUException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/SerialInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/SetErrorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet$EncryptionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet$IEncryptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet$IEncryptionHandler2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet$StateHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet$TabletInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/Tablet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/TimeoutException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/UsbDevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/UsbDevice_Win32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/UsbDevice_libusb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/UsbInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/WacomGSS/STU/WriteNotSupportedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog$Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons$SignatureDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$MyEncryptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog$MyEncryptionHandler2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption$SignatureDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/eagle/brta/controller/DemoButtons/DemoButtonsEncryption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/AppLicence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/CheckResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/DynamicCapture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/Key.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/Licence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/SigCtl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/SigObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/WizCtl$Font.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/WizCtl$InputObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/WizCtl$ObjectOptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/WizCtl$WizCtlEvents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/WizCtl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/com/florentis/signature/eSeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/src/DemoButtons/ReadMe..txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/src/DemoButtons/Run-DemoButtonsSerial.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signature/src/com/eagle/brta/controller/DemoButtons/ReadMe..txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/ApplicationInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/DBConfigForSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/DBConfigForSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/DBConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/DBConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/audit/model/QrAudit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/audit/model/QrAudit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/audit/repo/QrAuditRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/audit/repo/QrAuditRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/bean/ConstantValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/bean/ConstantValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/bean/QrCodeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/bean/QrCodeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/NewQrCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/dto/NewQrCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/NewSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/dto/NewSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/QrCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/dto/QrCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/QrCodeOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/dto/QrCodeOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/dto/Sign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/dto/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/dto/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/model/Contactusmessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/model/Contactusmessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/model/QrModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/model/QrModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/repository/QrRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/repository/QrRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QRGenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/service/QRGenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QRGenServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/service/QRGenServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QrRepoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eagle/qrscan/service/QrRepoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/brta-old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/brta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/finalbrta-old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/finalbrta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/ajax_fullcalendar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.asp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree_huck.lasso" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/filetree/jqueryFileTree_sabourdin.lasso" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/UploadHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/cors/postmessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/cors/result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/files/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/files/2V_vkjfD5Gg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/files/thumbnail/2V_vkjfD5Gg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fileupload/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/girls-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/girls-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/girls-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/music-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/music-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/music-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/music-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/music-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/nature-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/space-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/space-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/nature.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/ocean.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/no-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/users/user7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nvd3/cumulativeLineData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nvd3/linePlusBarData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nvd3/multiBarHorizontalData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nvd3/stackedAreaData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Animal 48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Lotus Sport Exige Gt3 01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Photoshop_Multi-coloured_butterflies_023732_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Quiet Getaway, Lake Tahoe, Nevada-565362.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Space_Launching_pad_023724_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Sport_Extreme__Waves__Ocean__Risk__Surfing_023731_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/Sritney_Spears2_1920x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/World_other_world_Costa_Rica__Puntarenas_023746_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/peugeot_908rc-1600x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/u3013_1278_53405-1600x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/u9644_3151_love_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/white-aston-martin-wallpaper-1920x1080-1008078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/white_curved_building-1920x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/wide-wallpaper-1920x1080-001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/wide-wallpaper-1920x1080-001234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/uploads/Images/windows_7___dragon-2560x1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/audio/alert.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/audio/fail.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/03e852a9d1635cf25800b41001ee80c7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/area-chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/backgrounds/wall_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bar_hori.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bar_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bg-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bgImg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/bgImg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/error.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/play-pause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/play-pause.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/video-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/blueimp/video-play.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/brta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/brta1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/brtatext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/colorpicker/alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/colorpicker/hue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/colorpicker/saturation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/dropzone/spritemap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/dropzone/spritemap@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/fileinput/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/application.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/code.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/css.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/db.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/directory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/film.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/flash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/folder_open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/html.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/java.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/linux.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/php.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/picture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/ppt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/psd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/ruby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/script.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/spinner.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/filetree/zip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icheck/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icheck/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/csv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/json.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/ppt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/sql.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/word.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icons/xml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/loaders/default.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/local.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/owl/AjaxLoader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/owl/grabbing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/scan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/scann.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/stunning-header-photo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/stunning-header-photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/stunning-header-photo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/themes/black.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/themes/blue.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/themes/brown.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/themes/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/themes/light.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/demo_charts_nvd3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/demo_charts_nvd3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/instascan.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/instascan.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.8.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.8.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/haxe/haxe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/haxe/haxe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/javascript/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/jinja2/jinja2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/jinja2/jinja2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/mllike/mllike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/mllike/mllike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/octave/octave.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/octave/octave.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/pegjs/pegjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/pegjs/pegjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/shell/shell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/shell/shell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/sieve/sieve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/sieve/sieve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/sql/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/sql/sql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/vbscript/vbscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/xquery/xquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/xquery/xquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/yaml/yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/codemirror/mode/yaml/yaml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/jquery-validation/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/jquery-validation/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/jquery/jquery.localizationTool.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/jquery/jquery.localizationTool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/lib/crossfilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/lib/crossfilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/lib/d3.v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/lib/d3.v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/lib/d3.v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/lib/d3.v3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/src/models/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/src/models/stackedAreaChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/src/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nvd3/src/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/rickshaw/d3.v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/rickshaw/d3.v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/tableexport/jspdf/jspdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/tableexport/jspdf/jspdf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/validationengine/jquery.validationEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/validationengine/jquery.validationEngine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/webcam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/webcam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/xml2json.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/xml2json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.reveng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/newJsp.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/newJsp.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/theme-default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/line-chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/logo1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/warn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jasper/LLRslip_newoff.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jasper/LLRslip_newoff.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jasper/LLRslip_newon.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jasper/LLRslip_newon.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jasper/offlinePreview.jasper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jasper/offlinePreview.jrxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Images/signature.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ContactUs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FAQs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PrivacyPolicy.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/abtpqrcvs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/offlineEnrolmentPage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeError.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeNotrecognized.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeVerify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/termsOfUse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PrivacyPolicy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PrivacyPolicy.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/offlineEnrolmentPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/offlineEnrolmentPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeNotrecognized.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeNotrecognized.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeVerify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/qrCodeVerify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/termsOfUse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/termsOfUse.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/images/147/leftRing.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/images/147/leftindex.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/images/147/leftlittle.jpg" beforeDir="false" />
@@ -737,394 +913,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/images/signature/74645645645.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/images/signature/97684574674.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/images/signature/98985956565.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ui/tiles/tiles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/brta-old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/brta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/com/eagle/brta/controller/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/com/eagle/brta/controller/ApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/com/eagle/brta/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/com/eagle/brta/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/com/eagle/brta/dto/NewQrCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/com/eagle/brta/dto/NewQrCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/finalbrta-old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/finalbrta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/ajax_fullcalendar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.asp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree_huck.lasso" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/filetree/jqueryFileTree_sabourdin.lasso" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/UploadHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/cors/postmessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/cors/result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/files/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/files/2V_vkjfD5Gg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/files/thumbnail/2V_vkjfD5Gg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/fileupload/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/blog/post_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/blog/post_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/girls-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/girls-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/girls-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/music-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/music-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/music-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/music-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/music-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/nature-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/space-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/gallery/space-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/nature.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/ocean.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/no-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/images/users/user7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/plugins/nvd3/cumulativeLineData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/plugins/nvd3/linePlusBarData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/plugins/nvd3/multiBarHorizontalData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/plugins/nvd3/stackedAreaData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Animal 48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Lotus Sport Exige Gt3 01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Photoshop_Multi-coloured_butterflies_023732_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Quiet Getaway, Lake Tahoe, Nevada-565362.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Space_Launching_pad_023724_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Sport_Extreme__Waves__Ocean__Risk__Surfing_023731_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/Sritney_Spears2_1920x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/World_other_world_Costa_Rica__Puntarenas_023746_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/peugeot_908rc-1600x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/u3013_1278_53405-1600x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/u9644_3151_love_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/white-aston-martin-wallpaper-1920x1080-1008078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/white_curved_building-1920x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/wide-wallpaper-1920x1080-001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/wide-wallpaper-1920x1080-001234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/assets/uploads/Images/windows_7___dragon-2560x1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/audio/alert.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/audio/fail.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/03e852a9d1635cf25800b41001ee80c7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/area-chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/backgrounds/wall_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/bar_hori.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/bar_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/bg-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/bgImg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/bgImg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/error.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/play-pause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/play-pause.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/video-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/blueimp/video-play.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/brta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/brta1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/brtatext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/colorpicker/alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/colorpicker/hue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/colorpicker/saturation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/dropzone/spritemap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/dropzone/spritemap@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/fileinput/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/application.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/code.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/css.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/db.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/directory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/film.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/flash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/folder_open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/html.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/java.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/linux.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/php.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/picture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/ppt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/psd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/ruby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/script.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/spinner.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/filetree/zip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icheck/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icheck/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/csv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/json.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/ppt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/sql.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/word.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/icons/xml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/img-1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/loaders/default.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/local.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/owl/AjaxLoader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/owl/grabbing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/scan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/scann.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/stunning-header-photo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/stunning-header-photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/stunning-header-photo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/themes/black.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/themes/blue.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/themes/brown.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/themes/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/img/themes/light.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/demo_charts_nvd3.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/demo_charts_nvd3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/instascan.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/instascan.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/jquery-1.8.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/jquery-1.8.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/haxe/haxe.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/haxe/haxe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/javascript/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/jinja2/jinja2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/jinja2/jinja2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/mllike/mllike.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/mllike/mllike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/octave/octave.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/octave/octave.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/pegjs/pegjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/pegjs/pegjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/shell/shell.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/shell/shell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/sieve/sieve.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/sieve/sieve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/sql/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/sql/sql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/vbscript/vbscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/xquery/xquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/xquery/xquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/yaml/yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/codemirror/mode/yaml/yaml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/jquery-validation/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/jquery-validation/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/jquery/jquery.localizationTool.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/jquery/jquery.localizationTool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/lib/crossfilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/lib/crossfilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/lib/d3.v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/lib/d3.v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/lib/d3.v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/lib/d3.v3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/src/models/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/src/models/stackedAreaChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/src/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/nvd3/src/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/rickshaw/d3.v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/rickshaw/d3.v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/tableexport/jspdf/jspdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/tableexport/jspdf/jspdf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/validationengine/jquery.validationEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/validationengine/jquery.validationEngine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/webcam.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/webcam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/xml2json.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/classes/static/js/xml2json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/ContactUs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/ContactUs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/FAQs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/FAQs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/PrivacyPolicy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/PrivacyPolicy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/abtpqrcvs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/abtpqrcvs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/offlineEnrolmentPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/offlineEnrolmentPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/qrCodeError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/qrCodeError.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/qrCodeNotrecognized.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/qrCodeNotrecognized.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/qrCodeVerify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/qrCodeVerify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/termsOfUse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/WEB-INF/jsp/termsOfUse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QrScan/ui/tiles/tiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/QrScan/ui/tiles/tiles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/brta-old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/brta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eagle/brta/controller/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eagle/brta/controller/ApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eagle/brta/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eagle/brta/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eagle/brta/dto/NewQrCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eagle/brta/dto/NewQrCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalbrta-old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finalbrta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/ajax_fullcalendar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.asp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree_huck.lasso" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/filetree/jqueryFileTree_sabourdin.lasso" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/UploadHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/cors/postmessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/cors/result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/files/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/files/2V_vkjfD5Gg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/files/thumbnail/2V_vkjfD5Gg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/fileupload/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/blog/post_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/blog/post_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/girls-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/girls-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/girls-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/music-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/music-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/music-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/music-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/music-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/nature-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/space-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/gallery/space-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/nature.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/ocean.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/no-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/images/users/user7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/plugins/nvd3/cumulativeLineData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/plugins/nvd3/linePlusBarData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/plugins/nvd3/multiBarHorizontalData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/plugins/nvd3/stackedAreaData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/upload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Animal 48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Lotus Sport Exige Gt3 01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Photoshop_Multi-coloured_butterflies_023732_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Quiet Getaway, Lake Tahoe, Nevada-565362.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Space_Launching_pad_023724_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Sport_Extreme__Waves__Ocean__Risk__Surfing_023731_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/Sritney_Spears2_1920x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/World_other_world_Costa_Rica__Puntarenas_023746_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/peugeot_908rc-1600x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/u3013_1278_53405-1600x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/u9644_3151_love_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/white-aston-martin-wallpaper-1920x1080-1008078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/white_curved_building-1920x1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/wide-wallpaper-1920x1080-001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/wide-wallpaper-1920x1080-001234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/uploads/Images/windows_7___dragon-2560x1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/audio/alert.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/audio/fail.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/03e852a9d1635cf25800b41001ee80c7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/area-chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/backgrounds/wall_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/bar_hori.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/bar_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/bg-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/bgImg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/bgImg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/error.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/play-pause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/play-pause.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/video-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/blueimp/video-play.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/brta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/brta1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/brtatext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/colorpicker/alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/colorpicker/hue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/colorpicker/saturation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/dropzone/spritemap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/dropzone/spritemap@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/fileinput/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/application.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/code.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/css.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/db.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/directory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/film.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/flash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/folder_open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/html.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/java.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/linux.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/php.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/picture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/ppt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/psd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/ruby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/script.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/spinner.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/filetree/zip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icheck/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icheck/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/csv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/json.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/pdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/ppt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/sql.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/word.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/xls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icons/xml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/loaders/default.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/local.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/owl/AjaxLoader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/owl/grabbing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/scan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/scann.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/stunning-header-photo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/stunning-header-photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/stunning-header-photo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/themes/black.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/themes/blue.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/themes/brown.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/themes/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/themes/light.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/demo_charts_nvd3.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/demo_charts_nvd3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/instascan.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/instascan.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-1.8.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-1.8.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/haxe/haxe.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/haxe/haxe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/javascript/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/jinja2/jinja2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/jinja2/jinja2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/mllike/mllike.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/mllike/mllike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/octave/octave.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/octave/octave.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/pegjs/pegjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/pegjs/pegjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/shell/shell.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/shell/shell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/sieve/sieve.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/sieve/sieve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/sql/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/sql/sql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/vbscript/vbscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/xquery/xquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/xquery/xquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/yaml/yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/codemirror/mode/yaml/yaml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/jquery-validation/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/jquery-validation/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/jquery/jquery.localizationTool.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/jquery/jquery.localizationTool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/lib/crossfilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/lib/crossfilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/lib/d3.v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/lib/d3.v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/lib/d3.v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/lib/d3.v3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/src/models/stackedAreaChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/src/models/stackedAreaChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/src/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/nvd3/src/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/rickshaw/d3.v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/rickshaw/d3.v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/tableexport/jspdf/jspdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/tableexport/jspdf/jspdf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/validationengine/jquery.validationEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/validationengine/jquery.validationEngine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/plugins/validationengine/languages/jquery.validationEngine-pt_BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/webcam.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/webcam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/xml2json.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/xml2json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wgssSTU.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1166,7 +955,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\Java\apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -1176,29 +965,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Ajith/wrkfldr/brtaold/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "spring.configuration.checksum": "9bdbb464a9bb77521a8ca949f86839c4"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Ajith/wrkfldr/Qrscan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e190f0b68b161393e5b4522249bcf914&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.eagle.brta.controller" />
@@ -1226,8 +1016,8 @@
       <option name="ACTIVE_PROFILES" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="brta" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eagle.brta.Application" />
+      <module name="Qrscan" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eagle.qrscan.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1333,7 +1123,14 @@
       <workItem from="1657602908947" duration="1373000" />
       <workItem from="1657633578594" duration="10428000" />
       <workItem from="1657718482385" duration="290000" />
-      <workItem from="1657771728703" duration="10751000" />
+      <workItem from="1657771728703" duration="10935000" />
+      <workItem from="1657796377685" duration="171000" />
+      <workItem from="1657796563393" duration="575000" />
+      <workItem from="1657797178086" duration="386000" />
+      <workItem from="1657797614144" duration="188000" />
+      <workItem from="1657797811115" duration="103000" />
+      <workItem from="1657798544999" duration="482000" />
+      <workItem from="1657799042499" duration="1413000" />
     </task>
     <servers />
   </component>
@@ -1359,12 +1156,12 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QRGenServiceImp.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/eagle/qrscan/service/QRGenServiceImp.java</url>
           <line>153</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/eagle/brta/service/QRGenServiceImp.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/eagle/qrscan/service/QRGenServiceImp.java</url>
           <line>168</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
