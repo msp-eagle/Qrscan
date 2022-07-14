@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="offlinePreview" columnDirection="RTL" pageWidth="555" pageHeight="660" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4e2cc9f3-9679-4d78-8a06-f337b84481cc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="132"/>
+	<parameter name="applicant.photolink" class="java.io.InputStream"/>
+	<parameter name="applicant.signature" class="java.io.InputStream"/>
+	<parameter name="brtaLogo" class="java.io.InputStream"/>
+	<parameter name="brtaLogo1" class="java.io.InputStream"/>
+	<parameter name="applicant.photolinkCopy" class="java.io.InputStream"/>
+	<parameter name="applicant.signatureCopy" class="java.io.InputStream"/>
+	<parameter name="brtaLogoCopy" class="java.io.InputStream"/>
+	<parameter name="brtaLogo1Copy" class="java.io.InputStream"/>
+	<field name="applicant.registrationnumber" class="java.lang.String"/>
+	<field name="applicant.licenseService.serviceName" class="java.lang.String"/>
+	<field name="applicant.dctbNo" class="java.lang.String"/>
+	<field name="applicant.licensetype.detail" class="java.lang.String"/>
+	<field name="applicant.applicantType.name" class="java.lang.String"/>
+	<field name="applicant.dateofbirthad" class="java.sql.Timestamp"/>
+	<field name="applicant.dctbPassingDate" class="java.sql.Timestamp"/>
+	<field name="applicant.licenseissueoffice.name" class="java.lang.String"/>
+	<field name="applicant.firstname" class="java.lang.String"/>
+	<field name="applicant.fathername" class="java.lang.String"/>
+	<field name="multipleVehicle" class="java.lang.String"/>
+	<field name="applicant.mothername" class="java.lang.String"/>
+	<field name="applicant.spousename" class="java.lang.String"/>
+	<field name="applicant.dateofbirthbs" class="java.sql.Timestamp"/>
+	<field name="address.permanentdoorno" class="java.lang.String"/>
+	<field name="address.permanentaddress" class="java.lang.String"/>
+	<field name="address.permanentlocality" class="java.lang.String"/>
+	<field name="address.villagemetrocityByPermentVillagemetrocityId.name" class="java.lang.String"/>
+	<field name="address.mstDistrictByPermentDistrictId.districtName" class="java.lang.String"/>
+	<field name="jasperPostal" class="java.lang.String"/>
+	<field name="applicant.bloodgroup.type" class="java.lang.String"/>
+	<field name="applicant.entrydate" class="java.sql.Timestamp"/>
+	<field name="applicant.brtaRefno" class="java.lang.String"/>
+	<field name="applicant.expirydate" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="625" splitType="Stretch">
+			<rectangle>
+				<reportElement x="41" y="2" width="492" height="259" uuid="3df1038b-ecef-48cd-8067-82499107fdfb"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="142" y="4" width="280" height="10" uuid="4c0d421c-2155-4a47-bc76-b497064602bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Calibri" size="6" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Government of the People's Republic of Bangladesh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="149" y="14" width="256" height="12" uuid="a31eefd4-5fd2-479b-af4c-b291b15f23cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Calibri" size="6" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Bangladesh Road Transport Authority (BRTA)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="235" y="21" width="32" height="13" uuid="967e7ba8-de67-4cd4-918f-40aac3c1fadc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Circle Name: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="154" y="34" width="272" height="8" uuid="92004cff-afdd-4c35-ba65-0eda5d394961"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Temporary Authorization in lieu of a driving license card  as per Rule 17(1) of Motor Vehicle Rules, 1984.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="195" y="42" width="187" height="11" uuid="2b7478d3-cf5b-41b7-b07a-19fa766a9eec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[This authorization shall be deemed as a driving license.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="41" y="53" width="492" height="1" uuid="75a16c1f-4636-4694-b25a-bb6b5bf83821"/>
+			</line>
+			<line>
+				<reportElement x="127" y="54" width="1" height="174" uuid="6754beb9-4fe9-4375-b185-ebfa404a1cd1"/>
+			</line>
+			<line>
+				<reportElement x="450" y="54" width="1" height="174" uuid="210bbd5e-f5a3-4895-a528-8b0134d186bb"/>
+			</line>
+			<line>
+				<reportElement x="128" y="66" width="109" height="1" uuid="704d2232-a51e-4cdd-ba4e-1a4189427173"/>
+			</line>
+			<line>
+				<reportElement x="237" y="54" width="1" height="46" uuid="d936c68f-7a7a-4b68-9544-2b64044a01b5"/>
+			</line>
+			<line>
+				<reportElement x="127" y="77" width="109" height="1" uuid="f620ba37-5b7c-4df7-a7f0-57e5cd36d8b3"/>
+			</line>
+			<line>
+				<reportElement x="128" y="88" width="109" height="1" uuid="3711a0a4-ea48-4367-b4a6-bf1d2c896a57"/>
+			</line>
+			<line>
+				<reportElement x="128" y="101" width="322" height="1" uuid="ddd74169-0f13-47bb-8988-ed64b02ca8be"/>
+			</line>
+			<line>
+				<reportElement x="326" y="54" width="1" height="46" uuid="77330b38-2962-40e8-97b6-b4811f78c9d4"/>
+			</line>
+			<line>
+				<reportElement x="41" y="227" width="492" height="1" uuid="0464f701-1a9e-4a04-b5bb-98ab2793224b"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="246" width="85" height="15" uuid="ed3fd9e6-bab7-42b6-90ad-4189c72c176a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Signature(Applicant)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="449" y="246" width="83" height="15" uuid="e67810a9-b1aa-489e-85ed-fb0c81d9e992"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Signature(Authority)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="327" y="67" width="123" height="1" uuid="07cecc12-12aa-48c8-9b0b-0edc4482e611"/>
+			</line>
+			<line>
+				<reportElement x="326" y="78" width="124" height="1" uuid="37e44d6b-cf9a-43be-b9e8-9594772c26f9"/>
+			</line>
+			<line>
+				<reportElement x="327" y="89" width="122" height="1" uuid="62932c5b-e8fb-4944-9b14-46b8e0aa5b80"/>
+			</line>
+			<line>
+				<reportElement x="128" y="112" width="322" height="1" uuid="3a7efc35-ff3b-4d29-9a47-2e77831e610f"/>
+			</line>
+			<line>
+				<reportElement x="128" y="123" width="322" height="1" uuid="81af8dd6-9fb7-4def-bb1d-04eb3a717d92"/>
+			</line>
+			<line>
+				<reportElement x="128" y="134" width="322" height="1" uuid="34f74712-f852-4d7a-977a-80baec233958"/>
+			</line>
+			<line>
+				<reportElement x="128" y="145" width="322" height="1" uuid="01dee756-e3ff-4750-b70d-cdc373e7217f"/>
+			</line>
+			<line>
+				<reportElement x="128" y="157" width="322" height="1" uuid="4f3efee9-cdb6-461f-a58e-94743937f26e"/>
+			</line>
+			<line>
+				<reportElement x="128" y="169" width="322" height="1" uuid="5ec1566b-0258-41fe-abb9-956b98185c27"/>
+			</line>
+			<line>
+				<reportElement x="128" y="204" width="322" height="1" uuid="752645f4-d228-49b9-ab02-31fd39547409"/>
+			</line>
+			<line>
+				<reportElement x="238" y="170" width="1" height="34" uuid="ca1fd70b-61ed-468f-ad6d-d97f5e68443f"/>
+			</line>
+			<line>
+				<reportElement x="326" y="170" width="1" height="34" uuid="1391d3bd-3279-4afb-b0b3-50a5d0164f88"/>
+			</line>
+			<line>
+				<reportElement x="128" y="180" width="110" height="1" uuid="dd520603-f5da-468b-affd-537bd75f4839"/>
+			</line>
+			<line>
+				<reportElement x="327" y="181" width="123" height="1" uuid="4b804eec-4678-439e-abbb-31acae27cc56"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="55" width="79" height="11" uuid="f7a4c667-0a0c-4f1f-983e-78a0b6445c4a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[BRTA Reference No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="66" width="79" height="11" uuid="4f83fcf9-6e64-4612-a945-d09c566a33d4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Type of Application:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="77" width="79" height="11" uuid="4defe14c-9676-454d-8909-b9dfc1e507d1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[DCTB Serial:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="88" width="79" height="12" uuid="e4f8f54e-d0ef-4a60-886b-6b46dd6803a2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Type of License:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="102" width="79" height="10" uuid="8394141e-4200-4cde-b181-e570e5bac473"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Additional Operation:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="113" width="79" height="11" uuid="42e62c19-8e39-4dd0-8601-fa2e2248d8bc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Vehicle Class:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="124" width="79" height="10" uuid="a4fe9704-e114-48d3-9b28-4927a6de7f52"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="135" width="79" height="10" uuid="6c879f6b-2cde-4c69-8b4b-b832bcfe4930"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Father's Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="146" width="79" height="11" uuid="0fd6ac05-3085-40fe-a52a-c2d3036dafbc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Mother's Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="158" width="79" height="11" uuid="9563e010-fa8d-4995-8d3b-b5fe905ceafd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Spouse Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="169" width="79" height="11" uuid="048e562e-85f3-4990-b31c-3e8da6f905bd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="181" width="79" height="11" uuid="4402b51e-ffc9-4083-83f0-e88955f650ab"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Daily Receieve Register Serial:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="193" width="79" height="11" uuid="b1a01e38-30bc-42b9-b7f8-13ec3d823bb8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Card Delivery Date/Validity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="205" width="79" height="22" uuid="dfd9f106-6af0-46f6-bf66-c99735c3d2c5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Permanent Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="238" y="54" width="86" height="12" uuid="1d15f28e-9e9c-43c0-a9f4-d94fe50126b4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Reference Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="238" y="66" width="86" height="11" uuid="88f05ca4-fcde-41fb-a129-5e7e9bb5602f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Applicant Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="238" y="78" width="86" height="11" uuid="c940aa63-86b1-402e-bd07-af5c0c2dae8f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[DCTB Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="238" y="90" width="86" height="10" uuid="9203cb5b-3a3b-4b87-9ab5-a992c7f96369"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Issuing Authority:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="240" y="170" width="84" height="10" uuid="bb17af26-203c-4067-85cc-a53435e576d2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Blood Group:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="240" y="182" width="83" height="10" uuid="2bef87eb-255a-4e26-8a03-22797defea4b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Register Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="131" y="55" width="104" height="11" uuid="ed80a6cb-5760-4099-8ae7-2e2ff8037cbb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.brtaRefno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="68" width="118" height="10" uuid="1ea54afc-38da-441e-b546-ab031c6e2151"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.applicantType.name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="67" width="104" height="10" uuid="bb723a1d-47f7-4526-bba4-eb99da1860f6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseService.serviceName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="78" width="106" height="10" uuid="7fea5f75-ad6f-4adc-991f-2d831790f0ea"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dctbNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="90" width="104" height="10" uuid="612fac8d-c54c-4fe1-899e-56c397866d46"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licensetype.detail}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="331" y="55" width="119" height="11" uuid="9eb1fb82-1230-42dc-aec7-58f94fa5510a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dateofbirthad}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="331" y="79" width="119" height="9" uuid="cdabb4e9-42de-490a-9ad1-a38c34f15a0b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dctbPassingDate} == null ? "N/A" : $F{applicant.dctbPassingDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="90" width="118" height="10" uuid="60dd720b-4d5a-4622-a256-da3140526467"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseissueoffice.name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="113" width="319" height="10" uuid="614a4296-1467-4453-a828-3d1c37099d06"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{multipleVehicle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="124" width="320" height="10" uuid="2b227d64-d0a3-4fe2-9143-3050a23b158f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="135" width="319" height="10" uuid="ede14e5a-1f15-4030-b26d-db79f63c3884"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.fathername}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="146" width="317" height="11" uuid="87f5c30d-b063-499c-a98c-b880df07428f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.mothername}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="158" width="317" height="11" uuid="38529344-6701-493f-92e8-f3b826460a4b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.spousename}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="131" y="169" width="105" height="11" uuid="f644446e-2958-45fc-8909-201bce45044f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dateofbirthbs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="170" width="118" height="10" uuid="01919ece-b357-4345-9b2f-5d9243531f20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.bloodgroup.type}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="331" y="182" width="119" height="10" uuid="5dbfb625-fd1c-4723-b5fc-c21c26865632"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.entrydate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="205" width="317" height="22" uuid="8f04a794-e47a-4b7c-8b59-17640562646e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address.permanentdoorno}+", "+$F{address.permanentaddress}+", "+$F{address.permanentlocality}+", "+$F{address.villagemetrocityByPermentVillagemetrocityId.name}+", "+$F{address.mstDistrictByPermentDistrictId.districtName}+" - "+$F{jasperPostal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="21" width="144" height="13" uuid="8c7b09cb-d365-4547-a6e0-2e9004887321"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseissueoffice.name}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="41" y="300" width="492" height="261" uuid="c21c8f89-8da3-48ee-8775-a6cf4c60078e"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="144" y="300" width="286" height="13" uuid="6d28b1f4-9b93-4ba2-9b84-f6515d4d9dab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Government of the People's Republic of Bangladesh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="140" y="313" width="288" height="11" uuid="7ea45d86-f420-4cce-9702-f17d0217d238"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Calibri" size="6" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Bangladesh Road Transport Authority (BRTA)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="268" y="324" width="121" height="11" uuid="1d6e2717-43b4-4049-b2b0-39f5f7efef40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseissueoffice.name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="233" y="324" width="32" height="11" uuid="4a36dd11-4bf3-4f77-ae14-1b7de524328e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Circle Name: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="153" y="335" width="272" height="8" uuid="6970cc35-0b72-4b02-b5bf-8abecf50c5c6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Temporary Authorization in lieu of a driving license card  as per Rule 17(1) of Motor Vehicle Rules, 1984.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="177" y="343" width="228" height="11" uuid="cd3916f2-4dca-45a3-8055-12804d630a9d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[This authorization shall be deemed as a driving license.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="41" y="354" width="492" height="1" uuid="291c95bf-b1b9-478d-a2b8-87f6883e7421"/>
+			</line>
+			<line>
+				<reportElement x="451" y="354" width="1" height="174" uuid="bed984ba-9eef-4365-820f-67d153291c43"/>
+			</line>
+			<line>
+				<reportElement x="126" y="354" width="1" height="174" uuid="e2c59390-bd94-4c00-bab6-e41f2727b6e8"/>
+			</line>
+			<line>
+				<reportElement x="42" y="528" width="491" height="1" uuid="2acd9504-2268-42ad-9f36-ab863acdd57d"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="452" y="546" width="80" height="15" uuid="9766a20c-7358-4e0d-9a29-4d4c210524c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Signature(Authority)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="42" y="546" width="84" height="15" uuid="d5c15092-3691-4e02-a21a-c9f63ea5fd6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Signature(Applicant)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="493" width="79" height="11" uuid="4ae79ebb-844f-4707-88e4-0c27f8ab0b0d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Card Delivery Date/Validity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="402" width="79" height="10" uuid="2183d84f-53e4-4647-b421-924f1e644935"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Additional Operation:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="458" width="79" height="11" uuid="2465c078-3a87-4f0a-a757-5c376e9af84c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Spouse Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="377" width="79" height="11" uuid="4c823120-8e17-45cf-a855-aa80c6d2ee47"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[DCTB Serial:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="413" width="79" height="11" uuid="ec3c8566-84fc-466f-9566-02f6138df638"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Vehicle Class:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="424" width="79" height="10" uuid="2612e1a0-33e2-48e5-8149-7803f3e70e11"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="446" width="79" height="11" uuid="188729dd-d9d7-42a2-a612-31522a0927b0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Mother's Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="435" width="79" height="10" uuid="7ac4b0df-411f-4ad8-bd03-b94b35fdaffd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Father's Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="355" width="79" height="11" uuid="90cad0fc-2b67-4c21-8cb2-495588844e4a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[BRTA Reference No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="481" width="79" height="11" uuid="d3e9cb42-25cf-4272-8b37-d679a69420c6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Daily Receieve Register Serial:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="469" width="79" height="11" uuid="6e77800b-0722-4d8b-9c84-44fe0ebfe513"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="505" width="79" height="22" uuid="a1f843e6-4d88-4115-a423-66a5e508ba43"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Permanent Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="366" width="79" height="11" uuid="b9e115dc-1417-4102-a4bc-9790f73eb057"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Type of Application:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="43" y="388" width="79" height="12" uuid="6c519395-9942-46fa-a5b5-dd8ea921b3a5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Type of License:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="131" y="505" width="318" height="22" uuid="bf1d5c79-f471-476d-8119-d69ae9c438f3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address.permanentdoorno}+", "+$F{address.permanentaddress}+", "+$F{address.permanentlocality}+", "+$F{address.villagemetrocityByPermentVillagemetrocityId.name}+", "+$F{address.mstDistrictByPermentDistrictId.districtName}+" - "+$F{jasperPostal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="127" y="504" width="324" height="1" uuid="17557f5a-07af-4286-a5d4-94ce1b20c00a"/>
+			</line>
+			<textField>
+				<reportElement x="331" y="469" width="118" height="9" uuid="8c1cfa0f-df97-44c6-b02e-51f96330f52d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.bloodgroup.type}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="331" y="481" width="118" height="11" uuid="f6baf8b2-ae08-4b80-a983-be5ff846754c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.entrydate}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="326" y="479" width="124" height="1" uuid="7be5cc63-6595-4c65-be57-ed4b3d9532bf"/>
+			</line>
+			<line>
+				<reportElement x="325" y="469" width="1" height="35" uuid="3c54f444-3f56-4d83-8448-f26a02f3446d"/>
+			</line>
+			<line>
+				<reportElement x="232" y="469" width="1" height="35" uuid="1c0f690d-455d-48ad-89d9-c30f03ed4e54"/>
+			</line>
+			<line>
+				<reportElement x="126" y="468" width="324" height="1" uuid="680febb1-10f1-4f1b-b7d4-66bd0bbd5898"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="235" y="480" width="85" height="10" uuid="1fea548f-faa0-43cc-bf75-5e5ff4ebf2ab"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Register Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="235" y="468" width="85" height="10" uuid="1d5c8adf-9c04-46b2-b2e8-23471a5be7ff"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Blood Group:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="127" y="480" width="105" height="1" uuid="b98af8a8-0d57-4215-96de-d6306729270e"/>
+			</line>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="131" y="469" width="101" height="12" uuid="800af448-0647-49db-84b9-38678c1eaa87"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dateofbirthbs}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="231" y="355" width="1" height="46" uuid="8f28fbd4-2448-406f-9b4e-5d08c1760574"/>
+			</line>
+			<line>
+				<reportElement x="325" y="354" width="1" height="46" uuid="29707fcf-73ac-4569-bc97-6f1ae8ac52b1"/>
+			</line>
+			<textField>
+				<reportElement x="131" y="355" width="101" height="11" uuid="aa2c71cb-775d-41d0-ae8e-e3adb581c233"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.brtaRefno}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="126" y="366" width="105" height="1" uuid="2eb4a2ae-e2f4-4e60-a205-706cf1fe17d7"/>
+			</line>
+			<line>
+				<reportElement x="126" y="377" width="105" height="1" uuid="ca04d224-9fcb-44b2-982a-97355693b272"/>
+			</line>
+			<line>
+				<reportElement x="126" y="388" width="105" height="1" uuid="5f870c6b-f8e7-43c4-b58b-4c00821efb1f"/>
+			</line>
+			<line>
+				<reportElement x="324" y="365" width="127" height="1" uuid="5d48a479-89f4-4683-955c-b0498de8402e"/>
+			</line>
+			<line>
+				<reportElement x="325" y="376" width="127" height="1" uuid="4bd870c7-721c-48c7-a866-c55f216f4710"/>
+			</line>
+			<line>
+				<reportElement x="325" y="389" width="127" height="1" uuid="a2cb672b-fdc0-4194-9626-2ca8af0852f8"/>
+			</line>
+			<line>
+				<reportElement x="126" y="401" width="325" height="1" uuid="7e6fdb88-6a75-4bff-9f6a-5f11b31cea12"/>
+			</line>
+			<line>
+				<reportElement x="126" y="413" width="326" height="1" uuid="4829f382-0122-4c5c-81cb-5b9e886e1158"/>
+			</line>
+			<line>
+				<reportElement x="126" y="424" width="326" height="1" uuid="bcd14810-8e2a-472f-9158-05eef150e178"/>
+			</line>
+			<line>
+				<reportElement x="127" y="434" width="325" height="1" uuid="16798806-171e-43da-9bd8-9d9dbfc3cc0e"/>
+			</line>
+			<line>
+				<reportElement x="127" y="446" width="325" height="1" uuid="4d0dec4f-c6b3-40c2-93d5-e8cc5880c853"/>
+			</line>
+			<line>
+				<reportElement x="126" y="458" width="326" height="1" uuid="af27c917-171b-498d-830c-70e16677cee0"/>
+			</line>
+			<textField>
+				<reportElement x="131" y="459" width="317" height="11" uuid="56248040-922c-4c04-b395-edd02adbb80e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.spousename}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="448" width="317" height="11" uuid="561343ee-d907-41c3-ab26-6d8405a905d6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.mothername}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="435" width="319" height="10" uuid="5516e32c-fc7e-4319-9142-198b5c146f8e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.fathername}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="425" width="318" height="10" uuid="289bf136-556d-452c-a339-3c6e3f5f7d6f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="415" width="318" height="10" uuid="8cf32a69-a903-4787-8db4-e3d54a1f258f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{multipleVehicle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="231" y="355" width="86" height="12" uuid="3571d215-b363-45da-b091-b8fd25b03dc3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Reference Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="231" y="367" width="86" height="11" uuid="2ec9d496-a6bb-4c15-a548-78e913c0fe81"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Applicant Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="231" y="378" width="86" height="11" uuid="1b6abb83-6ed0-4f47-999b-e2d21cb65e37"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[DCTB Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="231" y="390" width="86" height="10" uuid="82e7daaf-1aeb-461d-8ff5-37c66fc47406"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Issuing Authority:]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="331" y="355" width="119" height="11" uuid="4c99254d-5a69-4ce8-8b76-78dfb4cf6911"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dateofbirthad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="367" width="119" height="10" uuid="5fb4c73d-77cf-4a8f-967a-dccc3581c0e1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.applicantType.name}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="331" y="376" width="119" height="12" uuid="e385e975-ec5d-4443-9360-79fb31dd9b2c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dctbPassingDate} == null ? "N/A" : $F{applicant.dctbPassingDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="392" width="118" height="10" uuid="04c22b15-6a48-4968-bf7d-d5e50cc2db77"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseissueoffice.name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="368" width="101" height="10" uuid="bef49f03-8fbc-411f-850d-cf91cf775b02"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseService.serviceName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="378" width="100" height="10" uuid="b4a9c56c-09b2-4134-b39f-d2e35a0c799e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dctbNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="390" width="100" height="10" uuid="fadb7857-35a1-4290-b079-deb9d3ca343c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licensetype.detail}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center">
+				<reportElement x="458" y="65" width="68" height="93" uuid="32915091-61ea-44e2-8445-e0c1465d6908"/>
+				<imageExpression><![CDATA[$P{applicant.photolink}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="463" y="173" width="61" height="36" uuid="43fe4297-11f7-4323-8adc-3e7df85d08ba"/>
+				<imageExpression><![CDATA[$P{applicant.signature}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="50" y="10" width="79" height="39" uuid="8fab80ec-c067-4839-b0f9-7e4e3af085fb"/>
+				<imageExpression><![CDATA[$P{brtaLogo1}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="423" y="11" width="97" height="39" uuid="d18691cd-cca2-49ec-97e2-faa5ff5893e7"/>
+				<imageExpression><![CDATA[$P{brtaLogo}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="52" y="307" width="79" height="42" uuid="1b1ea8ed-c9fd-4b79-b7dd-3e12a6fb31ed"/>
+				<imageExpression><![CDATA[$P{brtaLogo1Copy}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="411" y="307" width="109" height="42" uuid="67e91477-5a8c-4a0c-ab7c-12c41602dd4f"/>
+				<imageExpression><![CDATA[$P{brtaLogoCopy}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="458" y="361" width="68" height="94" uuid="5fe982e4-3e10-4d8a-a036-03066e492219"/>
+				<imageExpression><![CDATA[$P{applicant.photolinkCopy}]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="459" y="472" width="67" height="36" uuid="373fa068-e478-4948-882b-662766109133"/>
+				<imageExpression><![CDATA[$P{applicant.signatureCopy}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="328" y="193" width="123" height="1" uuid="7971606a-51b5-499c-aa24-72ee0dc66655"/>
+			</line>
+			<line>
+				<reportElement x="128" y="191" width="110" height="1" uuid="5538eca6-9dea-4d02-b336-026f2a7b3110"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="240" y="194" width="83" height="10" uuid="d7a8d598-14c4-4d70-ac31-274a772ad7b4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Reference No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="331" y="194" width="118" height="10" uuid="c3cfe33d-a0a9-4b4d-8b5c-f8ee3e2849d7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.registrationnumber}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="126" y="493" width="107" height="1" uuid="4cfe59bd-3c70-4dec-9f78-aabde17a7c0a"/>
+			</line>
+			<line>
+				<reportElement x="326" y="493" width="125" height="1" uuid="6e75550e-640f-4f65-983b-77a5eaf6be36"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="235" y="493" width="85" height="10" uuid="88fc7185-c509-46e5-aa01-9f154f4fd0e6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Reference No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="331" y="494" width="119" height="10" uuid="2bc9ac80-10ab-44c9-91bd-3a2a99cb4c3f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.registrationnumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="41" y="276" width="492" height="11" uuid="dfccfed7-e783-427f-beeb-cf5b0067f0f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="131" y="192" width="107" height="12" uuid="4d7a112f-2a71-4e95-ae55-6e2d7984cdf8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.expirydate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="133" y="494" width="98" height="10" uuid="e29c0a65-570e-447b-b594-18e64333456c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="6" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.expirydate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

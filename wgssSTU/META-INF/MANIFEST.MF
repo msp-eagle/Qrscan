@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Wacom Co., Ltd.
+Implementation-Title: WacomGSS STU SDK
+Implementation-Version: 2.1.2.0
+Created-By: 1.7.0_09 (Oracle Corporation)
+

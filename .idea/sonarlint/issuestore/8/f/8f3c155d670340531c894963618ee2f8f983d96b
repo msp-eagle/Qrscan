@@ -1,0 +1,23 @@
+
+IWeb:AvoidCommentedOutCodeCheck%"Remove this commented out code.(àƒ¸
+JWeb:AvoidCommentedOutCodeCheck¯	"Remove this commented out code.(¹Ç€š
+MWeb:ImgWithoutAltCheck³	"%Add an "alt" attribute to this image.(¼ˆıÛşÿÿÿÿ
+HWeb:ImgWithoutAltCheckµ	"%Add an "alt" attribute to this image.(¸Œê•
+KWeb:BoldAndItalicTagsCheckÀ	"Replace this <i> tag by <em>.(¡†€8´ëî0
+OWeb:TableWithoutCaptionCheckÈ	" Add a description to this table.(æü†~8µëî0
+A	Web:S5256È	"%Add "<th>" headers to this "<table>".(æü†~8¶ëî0
+OWeb:AvoidCommentedOutCodeCheck¿"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+HWeb:ImgWithoutAltCheckë"%Add an "alt" attribute to this image.(à÷êş
+n%Web:ItemTagNotWithinContainerTagCheckõ"<Surround this <li> item tag by a <ul> or <ol> container one.(ÛÒ´Ú
+n%Web:ItemTagNotWithinContainerTagCheck—"<Surround this <li> item tag by a <ul> or <ol> container one.(×¥¹›
+s%Web:ItemTagNotWithinContainerTagCheck¤"<Surround this <li> item tag by a <ul> or <ol> container one.(©é¼Øüÿÿÿÿ
+s%Web:ItemTagNotWithinContainerTagCheck¥"<Surround this <li> item tag by a <ul> or <ol> container one.(åÀüÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheck¦"Remove this commented out code.(‘¨÷ üÿÿÿÿ
+n%Web:ItemTagNotWithinContainerTagCheck²"<Surround this <li> item tag by a <ul> or <ol> container one.(éØæì
+n%Web:ItemTagNotWithinContainerTagCheck³"<Surround this <li> item tag by a <ul> or <ol> container one.(ƒü
+s%Web:ItemTagNotWithinContainerTagCheck´"<Surround this <li> item tag by a <ul> or <ol> container one.(·®Æşÿÿÿÿ
+s%Web:ItemTagNotWithinContainerTagCheckµ"<Surround this <li> item tag by a <ul> or <ol> container one.(÷šıÿÿÿÿ
+n%Web:ItemTagNotWithinContainerTagCheck¶"<Surround this <li> item tag by a <ul> or <ol> container one.(Š°Éµ
+n%Web:ItemTagNotWithinContainerTagCheck·"<Surround this <li> item tag by a <ul> or <ol> container one.(áÊÑú
+n%Web:ItemTagNotWithinContainerTagCheck¸"<Surround this <li> item tag by a <ul> or <ol> container one.(ü•ã»
+GWeb:ImgWithoutAltCheckÅ"%Add an "alt" attribute to this image.(şáŒ5

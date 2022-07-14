@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LLRslip" pageWidth="500" pageHeight="500" orientation="Landscape" columnWidth="500" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c34be08c-e141-4d7c-a40f-6d0b49b5aab0">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.5026296018031566"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="320"/>
+	<property name="ireport.background.image" value="D:\Aruna\BANGLADESH\brta\src\main\resources\static\img\brta.png"/>
+	<property name="ireport.background.image.properties" value="true,false,0.05,64,85,0,0,380,364"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="4dd5728b-d259-4757-aae9-82b3d1b249e9"/>
+	<parameter name="photo" class="java.io.InputStream"/>
+	<field name="applicant.learnerLicenseNumber" class="java.lang.String"/>
+	<field name="applicant.registrationnumber" class="java.lang.String"/>
+	<field name="applicant.mobilenumber" class="java.lang.String"/>
+	<field name="applicant.firstname" class="java.lang.String"/>
+	<field name="applicant.fathername" class="java.lang.String"/>
+	<field name="applicant.entrydate" class="java.sql.Timestamp"/>
+	<field name="applicant.expirydate" class="java.sql.Timestamp"/>
+	<field name="applicant.dateofbirthbsinstring" class="java.lang.String"/>
+	<field name="applicant.licensetype.detail" class="java.lang.String"/>
+	<field name="multipleVehicle" class="java.lang.String"/>
+	<field name="applicant.licenseissueoffice.name" class="java.lang.String"/>
+	<field name="applicant.bloodgroup.type" class="java.lang.String"/>
+	<field name="address.presentdoorno" class="java.lang.String"/>
+	<field name="address.presentaddress" class="java.lang.String"/>
+	<field name="address.villagemetrocityByPresentVillagemetrocityId.name" class="java.lang.String"/>
+	<field name="address.mstDivisionByPresentDivisionId.divisionName" class="java.lang.String"/>
+	<field name="address.mstDistrictByPresentDistrictId.districtName" class="java.lang.String"/>
+	<field name="address.presentlocality" class="java.lang.String"/>
+	<field name="address.presentpostalcode" class="java.lang.String"/>
+	<field name="address.permanentdoorno" class="java.lang.String"/>
+	<field name="address.permanentaddress" class="java.lang.String"/>
+	<field name="address.villagemetrocityByPermentVillagemetrocityId.name" class="java.lang.String"/>
+	<field name="address.mstDivisionByPermentDivisionId.divisionName" class="java.lang.String"/>
+	<field name="address.mstDistrictByPermentDistrictId.districtName" class="java.lang.String"/>
+	<field name="address.permanentlocality" class="java.lang.String"/>
+	<field name="address.permanentpostalcode" class="java.lang.String"/>
+	<title>
+		<band height="68">
+			<staticText>
+				<reportElement mode="Opaque" x="108" y="11" width="246" height="14" backcolor="#FFFFFF" uuid="aa35c73c-29c1-4542-90f1-076434fc36bd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[                Government of the Peoples Republic of Bangladesh
+
+                                                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="56" width="219" height="12" uuid="9a0aed34-e860-41d4-9479-85d44de2c0ae"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[                     ISSUE OF LEARNER DRIVING LICENSE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="25" width="219" height="11" uuid="21cf14f1-edb1-41bb-a4e8-4e4e6f9d792e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="7" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[             BANGLADESH ROAD TRANSPORT AUTHORITY (BRTA)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="229" y="36" width="100" height="20" uuid="5659cd48-9b94-4f8a-b4de-6676eb7dd741"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseissueoffice.name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="134" splitType="Stretch">
+			<staticText>
+				<reportElement x="223" y="56" width="74" height="20" uuid="b4292bc8-a224-4e25-9f22-0436fc713c41"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[ISSUE DATE :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="312" y="56" width="99" height="20" uuid="8898023c-5955-47a9-a02e-1670a9e6d3ff"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.entrydate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="84" width="99" height="20" uuid="b1d007ca-ef47-4178-93e0-7480a5bf3b29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.expirydate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="224" y="84" width="73" height="20" uuid="07026e12-be52-403c-9a54-f5a73373eecb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[EXPIRY DATE :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="312" y="6" width="100" height="20" uuid="f3053617-a4da-4117-b62c-6e737cc77e98"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licensetype.detail}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="222" y="6" width="73" height="20" uuid="62003fd8-cdb0-4cb7-b587-c5770cb910f9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[LICENSE TYPE :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="312" y="30" width="100" height="20" uuid="919d7900-77fe-40cd-990b-fbf828d2e844"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{multipleVehicle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="222" y="31" width="73" height="20" uuid="f2f1a9df-5e64-428b-bd74-beac5e34f944"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[VEHICLE TYPE :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="312" y="111" width="100" height="20" uuid="032d2b10-68fa-4987-8a51-8393ea498bba"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.licenseissueoffice.name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="224" y="111" width="73" height="20" uuid="2814aa14-b184-4768-9519-ca51ceedb922"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[AREA:]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="40" y="13" width="82" height="71" uuid="17bf20a9-b9c7-4a95-b71a-7e6d92b512d5"/>
+				<imageExpression><![CDATA[$P{photo}]]></imageExpression>
+			</image>
+		</band>
+		<band height="295">
+			<staticText>
+				<reportElement x="40" y="54" width="91" height="20" uuid="4581b9c0-feb5-4c0a-880a-5b0c8b47898e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[APPLICANT NAME :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="47" width="168" height="36" uuid="3c06d5e2-e983-44d6-a1f8-3082ed96fb1a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.firstname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="81" width="91" height="30" uuid="af66359c-5c22-4af8-934b-49606c689e44"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[FATHER / HUSBAND NAME :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="82" width="142" height="30" uuid="a0f8f7f6-0042-4dd3-92ae-791be916f8c7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.fathername}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="262" width="91" height="20" uuid="2e6fca4c-1825-41a4-9c86-ac4326ae32ac"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[MOBILE NO :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="262" width="141" height="20" uuid="30840a4e-7087-466e-be94-98a839c3cb21"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.mobilenumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="210" width="73" height="20" uuid="a8abcb17-66a7-41b1-8c8a-a81ba9e33157"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[ DATE OF BIRTH :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="207" width="141" height="20" uuid="b551855f-2e35-4b7d-adea-8b778bcc042a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.dateofbirthbsinstring}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="237" width="91" height="20" uuid="76531a3b-f6a7-4d6d-8d10-508b6aa7790b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[BLOOD GROUP :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="237" width="141" height="20" uuid="38828a35-19b5-441b-9d3a-99c8fc8b8957"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.bloodgroup.type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="129" width="91" height="20" uuid="16319ab0-43c5-4ed4-bbfa-b0e994d54fc0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[PRESENT ADDRESS :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="113" width="142" height="49" uuid="4cf2af45-ddd4-4809-a7b8-b7bfccca9199"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address.presentdoorno}+","+$F{address.presentaddress}+","+$F{address.villagemetrocityByPresentVillagemetrocityId.name}+","+$F{address.mstDivisionByPresentDivisionId.divisionName}+","+$F{address.mstDistrictByPresentDistrictId.districtName}+","
++$F{address.presentlocality}+"-"+$F{address.presentpostalcode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="171" width="108" height="20" uuid="d1966e3e-e36f-4770-98f1-91d1e76fcd52"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[PERMANENT ADDRESS :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="157" width="142" height="48" uuid="53a7e460-1edd-4515-9171-71a71aac2f4c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address.permanentdoorno}+","+$F{address.permanentaddress}+","+$F{address.villagemetrocityByPermentVillagemetrocityId.name}+","+$F{address.mstDivisionByPermentDivisionId.divisionName}+","+$F{address.mstDistrictByPermentDistrictId.districtName}+","
++$F{address.permanentlocality}+"-"+$F{address.permanentpostalcode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="2" width="89" height="20" uuid="ef72e7e4-95f6-409c-a92f-a9a5613ec5e4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[LEARNER NO. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="2" width="100" height="20" uuid="febcc055-d59b-451d-bae1-4ec7c87ba154"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.learnerLicenseNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="28" width="89" height="20" uuid="4cd8778f-f793-4a0e-b219-c41f71179632"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[REFERENCE NO. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="28" width="100" height="20" uuid="39fd5800-fed6-4263-b3f9-343ae5156091"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="8" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicant.registrationnumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

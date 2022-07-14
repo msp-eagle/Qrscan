@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!-- <definition name="home"
+            template="/WEB-INF/jsp/home.jsp"></definition> -->
+    <definition name="offlineEnrolmentPage" template="/WEB-INF/jsp/offlineEnrolmentPage.jsp">
+    </definition>
+    <definition name="sucesspage" template="/WEB-INF/jsp/qrCodeVerify.jsp">
+    </definition>
+    <definition name="notRegerrorpage" template="/WEB-INF/jsp/qrCodeNotrecognized.jsp">
+    </definition>
+    <definition name="errorpage" template="/WEB-INF/jsp/qrCodeError.jsp">
+    </definition>
+    <definition name="termsOfUsePage" template="/WEB-INF/jsp/termsOfUse.jsp">
+    </definition>
+    <definition name="Contactuspage" template="/WEB-INF/jsp/ContactUs.jsp">
+    </definition>
+    <definition name="mailcontact" template="/WEB-INF/jsp/ContactUs.jsp">
+    </definition>
+
+    <definition name="PrivacyPolicypage" template="/WEB-INF/jsp/PrivacyPolicy.jsp">
+    </definition>
+    <definition name="faqspage" template="/WEB-INF/jsp/FAQs.jsp">
+    </definition>
+    <definition name="abtpqrcvspage" template="/WEB-INF/jsp/abtpqrcvs.jsp">
+    </definition>
+
+
+    <definition name="baseLayout"
+                template="/WEB-INF/pages_base/base/baseLayout.jsp">
+        <put-attribute name="header"
+                       value="/WEB-INF/pages_base/base/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer"
+                       value="/WEB-INF/pages_base/base/footer.jsp"/>
+        <put-attribute name="headerSession"
+                       value="/WEB-INF/pages_base/base/headerSession.jsp"/>
+    </definition>
+
+
+    <definition name="onlineLayout"
+                template="/WEB-INF/pages_base/base/onlineLayout.jsp">
+        <put-attribute name="header"
+                       value="/WEB-INF/pages_base/base/onlineHeader.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer"
+                       value="/WEB-INF/pages_base/base/footer.jsp"/>
+    </definition>
+</tiles-definitions>

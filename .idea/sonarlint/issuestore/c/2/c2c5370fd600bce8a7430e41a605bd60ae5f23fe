@@ -1,0 +1,43 @@
+
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ãğ±Ûûÿÿÿÿ
+NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(İÅÕµıÿÿÿÿ
+NWeb:AvoidCommentedOutCodeCheck'"Remove this commented out code.(‹òá¤ıÿÿÿÿ
+JWeb:AvoidCommentedOutCodeCheck¼"Remove this commented out code.(¹Ç€š
+MWeb:ImgWithoutAltCheckÀ"%Add an "alt" attribute to this image.(¼ˆıÛşÿÿÿÿ
+HWeb:ImgWithoutAltCheckÂ"%Add an "alt" attribute to this image.(¸Œê•
+HWeb:BoldAndItalicTagsCheckÎ"!Replace this <b> tag by <strong>.(¿¾Ş†
+HWeb:BoldAndItalicTagsCheckÑ"!Replace this <b> tag by <strong>.(¯Í×Ê
+MWeb:BoldAndItalicTagsCheckÜ"!Replace this <b> tag by <strong>.(“«Şöúÿÿÿÿ
+MWeb:BoldAndItalicTagsCheckï"!Replace this <b> tag by <strong>.(âÕ÷ıøÿÿÿÿ
+GWeb:BoldAndItalicTagsCheckş"!Replace this <b> tag by <strong>.(ŸÈë+
+HWeb:BoldAndItalicTagsCheckŠ"!Replace this <b> tag by <strong>.(¥ÔÛ¦
+HWeb:BoldAndItalicTagsCheckœ"!Replace this <b> tag by <strong>.(‚¦•²
+MWeb:BoldAndItalicTagsCheck"!Replace this <b> tag by <strong>.(¸”½¿úÿÿÿÿ
+MWeb:BoldAndItalicTagsCheck£"!Replace this <b> tag by <strong>.(š¢èöşÿÿÿÿ
+IWeb:BoldAndItalicTagsCheck¤"Replace this <i> tag by <em>.(¶í¸úÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckÂ"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckÉ"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckÑ"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheckÙ"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+OWeb:AvoidCommentedOutCodeChecká"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+OWeb:AvoidCommentedOutCodeChecké"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+HWeb:ImgWithoutAltCheckï"%Add an "alt" attribute to this image.(à÷êş
+n%Web:ItemTagNotWithinContainerTagCheckù"<Surround this <li> item tag by a <ul> or <ol> container one.(ÛÒ´Ú
+OWeb:AvoidCommentedOutCodeCheck—"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheck¥"Remove this commented out code.(‚ü±øÿÿÿÿ
+n%Web:ItemTagNotWithinContainerTagCheck¦"<Surround this <li> item tag by a <ul> or <ol> container one.(×¥¹›
+OWeb:AvoidCommentedOutCodeCheck«"Remove this commented out code.(‘¨÷ üÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheck²"Remove this commented out code.(‚ü±øÿÿÿÿ
+JWeb:AvoidCommentedOutCodeCheck³"Remove this commented out code.(Ä½®Ÿ
+s%Web:ItemTagNotWithinContainerTagCheck¶"<Surround this <li> item tag by a <ul> or <ol> container one.(©é¼Øüÿÿÿÿ
+s%Web:ItemTagNotWithinContainerTagCheck·"<Surround this <li> item tag by a <ul> or <ol> container one.(åÀüÿÿÿÿ
+OWeb:AvoidCommentedOutCodeCheck¸"Remove this commented out code.(‘¨÷ üÿÿÿÿ
+n%Web:ItemTagNotWithinContainerTagCheckÄ"<Surround this <li> item tag by a <ul> or <ol> container one.(éØæì
+n%Web:ItemTagNotWithinContainerTagCheckÅ"<Surround this <li> item tag by a <ul> or <ol> container one.(ƒü
+s%Web:ItemTagNotWithinContainerTagCheckÆ"<Surround this <li> item tag by a <ul> or <ol> container one.(·®Æşÿÿÿÿ
+s%Web:ItemTagNotWithinContainerTagCheckÇ"<Surround this <li> item tag by a <ul> or <ol> container one.(÷šıÿÿÿÿ
+n%Web:ItemTagNotWithinContainerTagCheckÈ"<Surround this <li> item tag by a <ul> or <ol> container one.(Š°Éµ
+n%Web:ItemTagNotWithinContainerTagCheckÉ"<Surround this <li> item tag by a <ul> or <ol> container one.(áÊÑú
+n%Web:ItemTagNotWithinContainerTagCheckÊ"<Surround this <li> item tag by a <ul> or <ol> container one.(ü•ã»
+OWeb:AvoidCommentedOutCodeCheckÎ"Remove this commented out code.(…“ŠÙşÿÿÿÿ
+GWeb:ImgWithoutAltCheckÔ"%Add an "alt" attribute to this image.(şáŒ5

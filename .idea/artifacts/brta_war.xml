@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="brta:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>brta</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="QrScan.war">
+      <element id="artifact" artifact-name="brta:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,57 @@
+
+ƒ
+java:S1130N"≠Remove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'com.fasterxml.jackson.core.JsonProcessingException'.(÷ΩÓê
+ƒ
+java:S1130`"≠Remove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'com.fasterxml.jackson.core.JsonProcessingException'.(÷ΩÓê
+M
+java:S2696ú"6Make the enclosing method "static" or remove this set.(Ëã≤ß
+W	java:S125ù"<This block of commented-out lines of code should be removed.(äˆ¶˚˛ˇˇˇˇ
+@
+java:S1481´")Remove this unused "next" local variable.(æ¬˝Ä
+T	java:S106≠"9Replace this use of System.out or System.err by a logger.(≠ßÚ£ˇˇˇˇˇ
+\
+java:S2147≤"ECombine this catch with the one at line 176, which has the same body.(Ô≠£ƒ
+N	java:S106∂"9Replace this use of System.out or System.err by a logger.(«ı"
+R	java:S125∑"<This block of commented-out lines of code should be removed.(˙ÏÇß
+É
+java:S1130æ"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(≠™∞ÿ
+S
+java:S1117ø"7Rename "msg" which hides the field declared at line 51.(é⁄Áµ¸ˇˇˇˇ
+O	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(È‹¢†
+R	java:S125Ã"<This block of commented-out lines of code should be removed.(ŸÁœ¥
+R	java:S125¯"<This block of commented-out lines of code should be removed.(ë˜∫á
+d
+java:S1128	"BRemove this unused import 'com.eagle.brta.model.Contactusmessage'.(¡Ó¸Á˘ˇˇˇˇ8÷¸îàè0
+9
+java:S1128!"Remove this duplicated import.(÷Äî˜¯ˇˇˇˇ
+9
+java:S1128""Remove this duplicated import.(ÍÜÅê˝ˇˇˇˇ
+k
+java:S1128#"IRemove this unused import 'org.springframework.validation.BindingResult'.(ã∂∏è˘ˇˇˇˇ8ÿ¸îàè0
+4
+java:S1128$"Remove this duplicated import.(èõ≈¡
+Q
+java:S1128%"/Remove this unused import 'javax.mail.Message'.(§©∫Û˝ˇˇˇˇ8Ÿ¸îàè0
+4
+java:S1128&"Remove this duplicated import.(«Óﬁç
+9
+java:S1128'"Remove this duplicated import.(´¿‘Ä˛ˇˇˇˇ
+K
+java:S1128(".Remove this unused import 'javax.naming.Name'.(∫ƒ‰î8€¸îàè0
+=
+java:S10683"'Remove this unused "msg" private field.(≠Ó¯Ô
+f
+java:S1192Z"PDefine a constant instead of duplicating this literal "notRegerrorpage" 3 times.(å‘∏ˆ
+p
+java:S1192D"UDefine a constant instead of duplicating this literal "offlineEnrolmentPage" 3 times.(∞—ã®˚ˇˇˇˇ
+g	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(∞¿§ 
+g	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â∞ˆ°
+g	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÈÎÔ
+n
+java:S11044"SMake decData a static final constant or non-public and provide accessors if needed.(…ä•±˝ˇˇˇˇ
+j
+java:S11045"TMake username a static final constant or non-public and provide accessors if needed.(‹±õ‘
+l
+java:S11046"QMake email a static final constant or non-public and provide accessors if needed.(æ∆ÜÀ˝ˇˇˇˇ
+i
+java:S11047"SMake message a static final constant or non-public and provide accessors if needed.(’√ÿ∑
