@@ -1,8 +1,11 @@
 package com.eagle.qrscan.controller;
 
 import javax.annotation.PostConstruct;
-import javax.mail.MessagingException;
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -30,8 +33,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.Properties;
 
 @Controller
 @Scope("session")
@@ -43,7 +48,7 @@ public class LoginController {
     public String decData;
     public String username;
     public String email;
-    public String message;
+    public String message1;
     @Autowired
     QRGenServiceImp qRGenServiceImp;
     @Autowired
@@ -169,20 +174,19 @@ public class LoginController {
     @ModelAttribute
     @RequestMapping("/mailcontact")
     public String showmail(@RequestParam(value = "Name") String Name,
-                           @RequestParam(value = "Message") String Message,
+                           @RequestParam(value = "Message") String Message1,
                            @RequestParam(value = "Email") String Email,
                            RedirectAttributes redirectAttr, Model model) {
 
         username = Name;
         email = Email;
-        message = Message;
+        message1 = Message1;
         String next = null;
 
         System.out.println("Sending Email...");
         try {
-            sendEmailWithAttachment();
-        } catch (MessagingException e) {
-            e.printStackTrace();
+//            sendEmailWithAttachment();
+            mailsending();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -192,16 +196,74 @@ public class LoginController {
 
         return "mailcontact";
     }
+//    @ModelAttribute
+//    @RequestMapping("/mailcontact")
+//    void sendEmailWithAttachment() throws MessagingException, IOException {
+//        MimeMessage msg = javaMailSender.createMimeMessage();
+//        MimeMessageHelper helper = new MimeMessageHelper(msg, true);
+//        helper.setTo("verify.support@philsys.gov.ph");
+//        helper.setSubject("QrScan Feedback");
+//        String fullMessage = username + "\n" + email + "\n" + message;
+//        System.out.println(fullMessage);
+//        helper.setText(fullMessage);
+//        javaMailSender.send(msg);
+//    }
 
-    void sendEmailWithAttachment() throws MessagingException, IOException {
-        MimeMessage msg = javaMailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(msg, true);
-        helper.setTo("verify.support@philsys.gov.ph");
-        helper.setSubject("QrScan Feedback");
-        String fullMessage = username + "\n" + email + "\n" + message;
-        System.out.println(fullMessage);
-        helper.setText(fullMessage);
-        javaMailSender.send(msg);
+//    @ModelAttribute
+//    @RequestMapping("/mailcontact")
+
+    void mailsending() throws  IOException {
+
+        String to = "verify.support@philsys.gov.ph";
+        // Mention the Sender's email address
+        String from = "register@philsys.gov.ph";
+        // Mention the SMTP server address. Below Gmail's SMTP server is being used to send email
+        String host = "mail.philsys.gov.ph";
+
+        String port ="587";
+        // Get system properties
+        Properties properties = System.getProperties();
+        // Setup mail server
+        properties.put("mail.smtp.host", host);
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.debug", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.port", port);
+        properties.put("mail.transport.protocol", "smtp");
+        properties.put("mail.smtp.starttls.required", "true");
+        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication("register@philsys.gov.ph", "42DxfhnVe2");
+            }
+        });
+        session.setDebug(false);
+        try {
+            MimeMessage message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(from));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+//            message.addRecipient(Message.RecipientType.TO, new InternetAddress("aj24btech@gmail.com"));
+            message.setSubject("QrScan Feedback");
+            String me=username + "\n" + email + "\n" + message1;
+            message.setText(me);
+
+//            BodyPart messageBodyPart = new MimeBodyPart();
+//            messageBodyPart.setText(me);
+//
+//            MimeBodyPart attachmentPart = new MimeBodyPart();
+//            attachmentPart.attachFile(new File("DailyReport.xls"));
+//
+//            Multipart multipart = new MimeMultipart();
+//            multipart.addBodyPart(messageBodyPart);
+//            multipart.addBodyPart(attachmentPart);
+//
+//            message.setContent(multipart);
+
+            System.out.println("sending...");
+            Transport.send(message);
+            System.out.println("Sent message successfully....");
+        } catch (MessagingException mex) {
+            mex.printStackTrace();
+        }
     }
 
 }
