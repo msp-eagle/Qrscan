@@ -21,8 +21,8 @@
     <script type="text/javascript" src="js/local/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/local/popper.min.js"></script>
     <link rel="stylesheet" type="text/css" id="theme" href="js/local/bootstrap.min.css"/>
-
-    <!-- <script type="text/javascript">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/abtpqrcvs.css" />
+     <script type="text/javascript">
         history.pushState(null, null, location.href);
         history.back();
         history.forward();
@@ -53,165 +53,6 @@
             }
         }
     </script>
- -->   
- 
-  <style type="text/css">
-
-      .footer--bottom--logo {
-          width: 100%;
-          max-width: 350px;
-      }
-        a:link, a:visited {
-
-            color: white;
-            /*padding: 15px 25px;*/
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-
-
-
-       
-
-        @media (min-width: 1281px) {
-
-            /* CSS */
-
-        }
-
-        /*
-          ##Device = Laptops, Desktops
-          ##Screen = B/w 1025px to 1280px
-        */
-
-        @media (min-width: 1025px) and (max-width: 1280px) {
-
-            /* CSS */
-
-        }
-
-        /*
-          ##Device = Tablets, Ipads (portrait)
-          ##Screen = B/w 768px to 1024px
-        */
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-
-            /* CSS */
-            /* .mat-toolbar{
-             max-width: calc(100% - 3%);
-            } */
-
-
-        }
-
-
-        /*
-          ##Device = Tablets, Ipads (landscape)
-          ##Screen = B/w 768px to 1024px
-        */
-
-        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-            /* CSS */
-
-        }
-
-        /*
-          ##Device = Low Resolution Tablets, Mobiles (Landscape)
-          ##Screen = B/w 481px to 767px
-        */
-
-        @media (min-width: 481px) and (max-width: 767px) {
-
-            /* CSS */
-
-        }
-
-        /*
-          ##Device = Most of the Smartphones Mobiles (Portrait)
-          ##Screen = B/w 320px to 479px
-        */
-
-        @media (min-width: 320px) and (max-width: 480px) {
-
-            /* CSS */
-
-        }
-
-        @media (max-width: 670px) {
-            .header--logo {
-                padding-top: 5px;
-                padding-bottom: 5px;
-                width: 170px;
-                height: 50px;
-                margin-top: 0px;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
-            .mat-container--header {
-                background-color: #1f4380;
-                height: 50px;
-            }
-        }
-
-
-        /*
-          ##Device = Tablets, Ipads (landscape)
-          ##Screen = B/w 768px to 1024px
-        */
-
-        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-            /* CSS */
-
-        }
-
-        /*
-          ##Device = Low Resolution Tablets, Mobiles (Landscape)
-          ##Screen = B/w 481px to 767px
-        */
-
-        @media (min-width: 481px) and (max-width: 767px) {
-
-            /* CSS */
-            .version-txt[_ngcontent-c8] {
-                font-size: 8px;
-                font-weight: 50;
-                display: block;
-                text-align: center;
-                padding-bottom: 6px;
-                padding-top: 6px;
-            }
-
-
-        }
-
-        /*
-          ##Device = Most of the Smartphones Mobiles (Portrait)
-          ##Screen = B/w 320px to 479px
-        */
-
-        @media (min-width: 320px) and (max-width: 480px) {
-
-            /* CSS */
-            .version-txt[_ngcontent-c8] {
-                font-size: 8px;
-                font-weight: 50;
-                display: block;
-                text-align: center;
-                padding-bottom: 6px;
-                padding-top: 6px;
-            }
-
-        }
-
-    </style>
-
-
 </head>
 <body>
 <form action="" id="validate" method="post">
@@ -302,11 +143,6 @@
             </div>
         </div>
     </div>
-    <!--   <div class="">-->
-    <!--         <div class="space1">
-
-            </div> -->
-    
     <jsp:include page="footer.jsp"/>
     </body>
 </html>

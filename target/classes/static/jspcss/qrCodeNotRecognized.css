@@ -1,0 +1,752 @@
+
+/*qrCodeNotrecognized*/
+.background {
+    background: #f7f5f5;
+    hight: 100%;
+    width: 100%;
+
+}
+
+.header--logo {
+
+    cursor: pointer;
+    /* UX enhancement */
+    /* padding-left: 4%;*/
+    /*background-color: white;*/
+    /* UX enhancement end */
+}
+
+.button--container {
+    text-align: center;
+    /*   display: flex; */
+    /*  display: -webkit-box;  */ /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    /*  display: -ms-flexbox;  */ /* TWEENER - IE 10 */
+    /*  display: -webkit-flex; */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+}
+
+.button-column {
+    flex-direction: column;
+}
+
+.button--center {
+
+    align-content: center;
+
+}
+
+.nomargin {
+    margin: 0px !important;
+}
+
+
+
+.body--logo1 {
+    height: 96px;
+    width: 75%;
+
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.w-150 {
+    width: 300px;
+    background-color: #1f4380;
+    color: white;
+    text-align: center;
+}
+
+.button-p10 {
+    padding: 10px;
+    cursor: pointer;
+    min-height: 50px;
+    border: 3px solid #f1b608;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border-radius: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-heading-background {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.text-background {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+.text-sub-heading-background {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.font-bold {
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+
+
+.blue-color {
+    color: #1f4380;
+}
+
+
+a:link, a:visited {
+
+    color: white;
+    /*padding: 15px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*.footer--container{
+
+  !*background-image: url(https://uat.mspsandbox.com/pre-registration-ui/pre-registration/assets/img/footer.png) ;*!
+ !* background-image: url(https://register.philsys.gov.ph/pre-registration-ui/pre-registration/assets/img/footer.png);*!
+background-color: #1f4380;
+  background-repeat :no-repeat;
+
+  background-size: cover;
+}*/
+
+.nomargin {
+    margin: 0px !important;
+}
+
+@media (max-width: 500px) {
+    .version-txt {
+        font-size: 8px;
+        font-family: Arial;
+        font-weight: 50;
+        display: block;
+        padding-bottom: -200px;
+
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .version-txt[_ngcontent-c8] {
+        font-size: 13px;
+        font-weight: 200;
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .header--logo1 {
+        height: 96px;
+        width: 75%;
+        margin-left: 72px;
+    }
+
+
+    .footer-logo_flex {
+        max-width: 150px;
+    }
+
+
+}
+
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    .version-txt[_ngcontent-c8] {
+        font-size: 8px;
+        font-weight: 50;
+        display: block;
+        text-align: center;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* CSS */
+    .version-txt[_ngcontent-c8] {
+        font-size: 8px;
+        font-weight: 50;
+        display: block;
+        text-align: center;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+
+}                        :root {
+                             --p-color: #2670b6;
+                             --s-color: #15159c;
+                             --pbg-color: #fff;
+                             --sbg-color: #ff0000;
+                             --a-color: #fff;
+                             --c-color: ffffff;
+
+
+                         }
+
+a {
+    font-family: Arial;
+    color: var(--a-color) !important;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.space1 {
+    padding-bottom: 35px;
+    background-color: #f7f5f5;
+
+}
+
+/*.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}*/
+
+:root {
+    --font-size: 15px;
+    --primary--color: #ffffff;
+    --primary--light--color: #ffffff;
+    --secondary--color: #ffffff;
+    --secondary--light--color: #ffffff;
+    --primary--background--color: #1f4380;
+    --font-h1: calc(--font-size + 5px);
+    --heading--font-size: 1.5rem;
+    --white-color: white;
+
+}
+
+/*  header container css*/
+
+
+.nav-border > ul > li:first-child {
+    border-left: 1px solid gray;
+}
+
+.nav-border > ul > li {
+    border-right: 1px solid gray;
+}
+
+header--logo.bottom-banner {
+    height: 140px;
+    background: linear-gradient(to right, #226da5 0%, #2872c1 18%, #163d6a 100%);
+}
+
+
+.header--logo {
+    vertical-align: middle;
+    cursor: pointer;
+    /* UX enhancement */
+    /* padding-left: 4%;*/
+    /*background-color: white;*/
+    /* UX enhancement end */
+}
+
+.sidenav-list > .mat-list-item {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+}
+
+.header__actions {
+    text-transform: none !important;
+}
+
+@media (min-width: 670px) {
+    .sidenav-button {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .list-item {
+        display: none;
+    }
+}
+
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .mat-toolbar {
+        max-width: calc(100% - 3%);
+    }
+
+    .header--logo1 {
+        width: 75%;
+        margin-left: 67px;
+
+
+    }
+
+}
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+    .header--logo1 {
+        width: 74%;
+        margin-left: 63px;
+
+    }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    .header--logo1 {
+        height: 90px;
+        width: 90%;
+        margin-left: 15px;
+
+
+    }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* CSS */
+    .header--logo1 {
+        height: 90px;
+        width: 90%;
+        margin-left: 15px;
+
+
+    }
+
+}
+
+@media (max-width: 670px) {
+
+
+    .header--logo1 {
+        height: 90px;
+        width: 90%;
+        margin-left: 15px;
+
+
+    }
+
+
+}
+
+.h-140 > a > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-middle-content {
+    padding: 0px 10px;
+}
+
+.header-slider {
+    background: #465ab3;
+    height: 460px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-padding {
+    padding: 5px 5px;
+}
+
+.header-middle-content h6, .header-middle-content h2 {
+
+
+    padding: 4px 2px;
+    color: white;
+    height: 10%;
+    width: 100%;
+}
+
+.nav-item > a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.header-middle-content > h4 {
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+a.ex1:hover, a.
+    /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: black;
+}
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: gray !important;
+    text-decoration: none;
+    background-color: black !important;
+}
+
+.ti-border {
+    font-family: Arial;
+    border-bottom: 2px solid white;
+    width: 22%;
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu .dropdown-toggle:after {
+        border-top: .3em solid transparent;
+        border-right: 0;
+        border-bottom: .3em solid transparent;
+        border-left: .3em solid;
+        width: auto;
+        height: auto;
+    }
+
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .nav-item .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+        display: block;
+    }
+}
+
+/* bootstab*/
+
+
+/*end*/
+footer-logo-space.main-footer {
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: fixed;
+    bottom: -9px;
+    width: 100%;
+    z-index: -1;
+    margin-bottom: 2px;
+    background: white;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f5f5;
+
+}
+
+a:link, a:visited {
+    color: white;
+    /*padding: 15px 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nomargin {
+    margin: 0px !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+
+}
+
+.nomargin {
+    margin: 0px !important;
+}
+
+@media (max-width: 500px) {
+    .version-txt {
+        font-size: 8px;
+        font-family: Arial;
+        font-weight: 50;
+        display: block;
+        padding-bottom: -200px;
+
+    }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+    .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+    .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+    .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+    .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+    .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+    .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+    .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+    .version-txt[_ngcontent-c8] {
+        font-size: 13px;
+        font-weight: 200;
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .footer-logo_flex {
+        max-width: 150px;
+    }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+    .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+    .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+    .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+    .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+    .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+    .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+    .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .version-txt[_ngcontent-c8] {
+        font-size: 8px;
+        font-weight: 50;
+        display: block;
+        text-align: center;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+    .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+    .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+    .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+    .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+    .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+    .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+    .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    .version-txt[_ngcontent-c8] {
+        font-size: 8px;
+        font-weight: 50;
+        display: block;
+        text-align: center;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+    .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+    .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+    .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+    .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+    .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+    .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+    .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+}
+
+.font-bold2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-background {
+    background: #e9e9eb;
+    text-align: center;
+    color: white;
+}
+
+.textcenter {
+    font-family: Arial;
+    text-align: center;
+    color: white;
+}
+
+
+.footer-background > .container {
+    padding-top: 25px;
+}
+
+.w-150 {
+    width: 150px;
+    background-color: #1f4380;
+    color: white;
+    border: 3px solid #1f4380;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    min-height: 50px;
+}
+
+button-p10 {
+    padding: 10px;
+    cursor: pointer;
+    min-height: 50px;
+    border: 3px solid #1f4380;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border-radius: 5px;
+}
+
+
+@media (max-width: 670px) {
+    .header--logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 170px;
+        height: 50px;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .mat-container--header {
+        background-color: #1f4380;
+        height: 50px;
+    }
+}
