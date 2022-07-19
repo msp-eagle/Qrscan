@@ -37,7 +37,7 @@ public class DBConfigForSave {
 
         if (sOsName.startsWith("Windows")) {
             System.out.println("WINDOWS OS");
-            propertyFile = new File("C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\bin\\PSA.conf");
+            propertyFile = new File("D:\\CONFIGURATION\\PSA.conf");
 
         } else {
 

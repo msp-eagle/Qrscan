@@ -136,19 +136,19 @@
                             <h5 style="color: #1f4380"><b>Connect With Us</b></h5>
                         </div>
 
-                        <li class="list-item">
+                        <li class="list-item" style="list-style: none">
                             <a style="padding-right: 20px" href="https://www.philsys.gov.ph/philsys" target="_blank">
                                 <img src="img/web.png" style: width="55" height="55">
                             </a><a href="https://www.philsys.gov.ph/philsys"
                                    style="color: #1f4380">psa.gov.ph/philsys</a>
                         </li>
-                        <li class="list-item">
+                        <li class="list-item" style="list-style: none">
                             <a style="padding-right: 20px" href="https://www.facebook.com/PSAgovph" target="_blank">
                                 <img src="img/facebook.png" style: width="50" height="50">
                             </a>
                             <a href="https://www.facebook.com/PSAgovph" style="color: #1f4380">PhilippineStatisticsAuthority</a>
                         </li>
-                        <li class="list-item">
+                        <li class="list-item" style="list-style: none">
                             <a style="padding-right: 20px" href=" https://www.facebook.com/PSAPhilSysOfficial"
                                target="_blank">
                                 <img src="img/facebook.png" style: width="50" height="50">
