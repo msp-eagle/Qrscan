@@ -444,7 +444,7 @@
 
 
         function stopWebcam() {
-
+            document.getElementById("showan").style.display="block";
             scanner.stop();
 
             $('#stopbtn').hide();
