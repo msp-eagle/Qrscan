@@ -5,23 +5,11 @@
 <body>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/footer.css">
     
-        <%--    <div class="footer-logo">--%>
 
-        <%--        <img class="footer-logo-space" src="img/idnatin.png"--%>
-        <%--        >--%>
-
-        <%--    </div>--%>
 
         <!-- footer -->
         <div class="footer--container padding-5">
             <div class="row" style="justify-content: center;text-align: center;">
-                <%--                <div class=" col-md-2 col-sm-12 col-lg-2">--%>
-                <%--                    <div class="mx-auto">--%>
-                <%--                        <div class="version-txt">--%>
-                <%--                            <a href="offlineEnrolmentPage">HOME</a></div>--%>
-                <%--                    </div>--%>
-                <%--                    <!--<hr class="clearfix w-100 d-md-none">-->--%>
-                <%--                </div>--%>
                 <div class=" col-md-3 col-sm-12 col-lg-2">
                     <div class="mx-auto">
                         <div class="version-txt">
@@ -34,7 +22,6 @@
                         <div class="version-txt">
                             <a href="abtpqrcvs">ABOUT PHILSYS &#10004;</a></div>
                     </div>
-                    <!--<hr class="clearfix w-100 d-md-none">-->
                 </div>
 
                 <div class=" col-md-3 col-sm-12 col-lg-2">
@@ -42,7 +29,6 @@
                         <div class="version-txt"><a href="FAQs">FAQS</a></div>
 
                     </div>
-                    <!--  <hr class="clearfix w-100 d-md-none">-->
                 </div>
 
 

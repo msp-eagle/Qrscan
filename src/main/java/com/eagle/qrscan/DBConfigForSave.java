@@ -76,7 +76,7 @@ public class DBConfigForSave {
             dataSource.setUsername(ConstantValues.decrypt(resource.getString("db2.username"), ConstantValues.acccode));
             dataSource.setPassword(ConstantValues.decrypt(resource.getString("db2.password"), ConstantValues.acccode));
 
-            System.out.println(ConstantValues.decrypt("6Uikub7yTFuczKv9dSM5yJNkaPPjJOboGnqSMckyzZdsBrMmin9zpeAp8Jnyf96O",ConstantValues.acccode));
+            System.out.println(ConstantValues.decrypt(resource.getString("db2.url"), ConstantValues.acccode));
 
 
         } catch (Exception e) {

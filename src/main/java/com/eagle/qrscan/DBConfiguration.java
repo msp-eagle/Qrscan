@@ -90,6 +90,8 @@ public class DBConfiguration {
             dataSource.setUsername(ConstantValues.decrypt(resource.getString("db.username"), ConstantValues.acccode));
             dataSource.setPassword(ConstantValues.decrypt(resource.getString("db.password"), ConstantValues.acccode));
 
+            System.out.println(ConstantValues.decrypt(resource.getString("db.url"), ConstantValues.acccode));
+
 
         } catch (Exception e) {
             e.printStackTrace();

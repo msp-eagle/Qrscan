@@ -93,246 +93,6 @@
 
 
 <!-- END PLUGINS -->
-<script type="text/javascript">
-    window.document.onkeydown = function (e) {
-        if (!e) {
-            e = event;
-        }
-        if (e.keyCode == 27) {
-            lightbox_close();
-        }
-    }
-
-    function lightbox_open() {
-        var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-        window.scrollTo(0, 0);
-        document.getElementById('light').style.display = 'block';
-        document.getElementById('fade').style.display = 'block';
-        lightBoxVideo.play();
-    }
-
-    function lightbox_close() {
-        var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-        document.getElementById('light').style.display = 'none';
-        document.getElementById('fade').style.display = 'none';
-        lightBoxVideo.pause();
-    }
-
-    var scanner;
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    function startWebcam() {
-
-        scanner = new Instascan.Scanner(
-            {
-                video: document.getElementById('preview'),
-
-
-            }
-        );
-
-        $('#preview').show();
-        $('#scanimage').hide();
-
-
-        scanner.addListener('scan', function (content) {
-
-            CamScan(content);
-
-        });
-
-        if (navigator.userAgent.indexOf("Android") != -1) {
-            Instascan.Camera.getCameras().then(cameras => {/*
-		          if(cameras.length >= 1){
-		        	  getCamListForMob(cameras.length);
-		              scanner.start(cameras[1]);
-		          } else if(cameras.length >= 0){
-		        	  getCamListForMob(cameras.length);
-		        	  scanner.start(cameras[0]);
-
-		          } else {
-		        	  console.error("Camera not found!");
-		          } */
-
-
-                if (cameras.length > 0) {
-                    getCamList(cameras);
-                    var cam = document.getElementById("startbtn").value;
-                    scanner.start(cameras[cam]);
-                } else {
-                    console.error("Camera not found!");
-                }
-            });
-        } else {
-
-            Instascan.Camera.getCameras().then(cameras => {
-                if (cameras.length > 0) {
-                    getCamList(cameras);
-                    var cam = document.getElementById("startbtn").value;
-
-                    scanner.start(cameras[cam]);
-                } else {
-                    console.error("Camera not found!");
-                }
-
-            });
-        }
-        setTimeout(function () {
-            scanner.stop();
-            $('#stopbtn').hide();
-            $('#startbtn').hide();
-            $('#scanimage').show();
-            $('#preview').hide();
-        }, 100000);
-
-        setTimeout(function () {
-            $('#stopbtn').show();
-            $('#startbtn').show();
-        }, 4000);
-
-
-    }
-
-
-    function CamScan(result) {
-
-        var markers = [{"qrdata": result}];
-        stopWebcam();
-        $.ajax({
-            type: "POST",
-            processData: false,
-            contentType: "application/json; charset=utf-8",
-            url: "scan",
-            data: JSON.stringify({qrdata: markers}),
-            success: function (data) {
-                if( data.includes("errorpagenew")){
-                    document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
-                    document.getElementById("validate").submit();
-                } else if(data != null && data != "" && data != "errorpage" && data.includes("new")) {
-                    document.getElementById("username").value = data;
-                    document.getElementById("validate").action = "<%=request.getContextPath()%>/newsucesspage";
-                    document.getElementById("validate").submit();
-                } else if (data != null && data != "" && data != "errorpage") {
-
-                    document.getElementById("username").value = data;
-                    document.getElementById("validate").action = "<%=request.getContextPath()%>/sucesspage";
-                    document.getElementById("validate").submit();
-                } else if (data == "errorpage") {
-                    document.getElementById("validate").action = "<%=request.getContextPath()%>/errorpage";
-                    document.getElementById("validate").submit();
-                } else {
-                    document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
-                    document.getElementById("validate").submit();
-                }
-
-            }
-        });
-    }
-
-
-    function stopWebcam() {
-
-        scanner.stop();
-
-        $('#stopbtn').hide();
-        $('#startbtn').hide();
-        $('#preview').hide();
-        $('#scanimage').show();
-    }
-    function changeWebcam() {
-        var cam = document.getElementById("startbtn").value;
-
-        $('#preview').show();
-
-        scanner.addListener('scan', function (content) {
-
-            CamScan(content);
-
-        });
-        Instascan.Camera.getCameras().then(cameras => {
-
-            scanner.start(cameras[cam]);
-
-        });
-
-    }
-
-    function getCamList(camaras) {
-
-        var camopt = document.getElementById("startbtn");
-
-
-        var camlen = camopt.options.length;
-
-
-        if (isMobile) {
-            camopt.options[camopt.options.length - camlen] = new Option("Front Camera", 0);
-        } else {
-
-            camopt.options[camopt.options.length - camlen] = new Option(camaras[0].name, 0);
-        }
-
-        if (camaras.length > camlen) {
-
-            var isBack = true;
-            for (var i = camlen; i < camaras.length; i++) {
-                if (isMobile) {
-                    let cname = camaras[i].name;
-                    if (isBack) {
-
-                        if (cname.includes("back")) {
-
-                            camopt.options[camopt.options.length] = new Option("Back Camera", i);
-                            isBack = false;
-
-                        }
-
-                    }
-                } else {
-                    camopt.options[camopt.options.length] = new Option(camaras[i].name, i);
-                }
-
-
-            }
-        }
-    }
-
-    window.onload = function () {
-
-        var reloadval = sessionStorage.getItem("camv");
-        var reloaded = sessionStorage.getItem("reload");
-        if (reloaded) {
-            if (reloadval == 0) {
-
-                sessionStorage.removeItem("camv");
-                sessionStorage.removeItem("reload");
-                startWebcam();
-            }
-        }
-    }
-
-
-    function reloadP() {
-
-        if (isMobile) {
-
-            var camv = document.getElementById("startbtn").value;
-
-            if (camv == 0) {
-                sessionStorage.setItem("camv", camv);
-                sessionStorage.setItem("reload", true);
-                document.location.reload();
-            } else {
-
-                changeWebcam();
-            }
-
-        } else {
-            changeWebcam();
-        }
-    }
-
-</script>
 
 <body>
 <form action="" id="validate" method="post">
@@ -346,20 +106,64 @@
          width: 100%;
          height: 100px;" src="assets/img/thumbmark_logo.png" />-->
 
+    <style>
+        #radio5,#scan-button {
+           display:none;
+        }
 
+    </style>
     <div class="row nomargin">
 
         <div class=" col-md-6 col-sm-12 col-lg-6">
             <div class="mx-auto">
+
+
                 <br>
                 <div class="text-sub-heading-background blue-color  text-center text-font-size-welcome font-bold"
                      style="text-shadow: 1px 0 #1f4380;">Welcome to the
                 </div>
                 <p style="text-align:center;"><img src="img/PhilSys_Logo-removebg-preview.png" style="width: 300px;">
                 </p>
-                <p style="text-align:center;"><img src="img/Click QR Code Logo.png" style="width: 200px;"
-                                                   onclick="startWebcam()"></p>
+                <div id="showan">
+                <p style="text-align: center" ><img src="img/Click QR Code Logo.png" style="width: 200px;" onclick="startWebcam2()"></p>
+                </div>
+
+
+                   <div id="radio5" style="color:#1f4380;font-family: gowtham;">
+                       <h3 style="color: #1f4380;">which sector are you from</h3>
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                           <label class="form-check-label" for="flexRadioDefault1">
+                              Government
+                           </label>
+                       </div>
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                              financial
+                           </label>
+                       </div>
+
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                               Small Business
+                           </label>
+                       </div>
+
+                       <div class="form-check">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                           <label class="form-check-label" for="flexRadioDefault2">
+                               Individuals
+                           </label>
+                       </div>
+                   </div>
+                <div id="scan-button">
+                    <p style="text-align: center"><button type="button" class="btn btn-secondary btn-lg" style="background-color: #1f4380;width:100px;" onclick="startWebcam()">Scan</button></p>
+                </div>
+
             </div>
+
             <div id="scanimage">
                 <div class=" button-column text-center button--center ">
                     <%--                <button class="w-150 button-p10" style=" font-family: Arial;" onclick="startWebcam();">--%>
@@ -494,14 +298,260 @@
     
     
    <jsp:include page="footer.jsp"/>
-    
-    
-    
-    
-    
-    
-    
-    <%--<div class="space1">--%>
+
+
+    <script type="text/javascript">
+        window.document.onkeydown = function (e) {
+            if (!e) {
+                e = event;
+            }
+            if (e.keyCode == 27) {
+                lightbox_close();
+            }
+        }
+
+        function lightbox_open() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block';
+            lightBoxVideo.play();
+        }
+
+        function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none';
+            lightBoxVideo.pause();
+        }
+
+        var scanner;
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        function startWebcam2() {
+            document.getElementById("showan").style.display="none";
+            document.getElementById("radio5").style.marginLeft = '300px';
+            document.getElementById("radio5").style.display = 'block';
+            document.getElementById("scan-button").style.display = 'block';
+            document.getElementById("scan-button").style.marginTop = '20px';
+
+        }
+        function startWebcam() {
+            document.getElementById("radio5").style.display = 'none';
+            document.getElementById("scan-button").style.display = 'none';
+            scanner = new Instascan.Scanner(
+                {
+                    video: document.getElementById('preview'),
+                }
+            );
+
+            $('#preview').show();
+            $('#scanimage').hide();
+
+
+            scanner.addListener('scan', function (content) {
+
+                CamScan(content);
+
+            });
+
+            if (navigator.userAgent.indexOf("Android") != -1) {
+                Instascan.Camera.getCameras().then(cameras => {/*
+                      if(cameras.length >= 1){
+                    	  getCamListForMob(cameras.length);
+                          scanner.start(cameras[1]);
+                      } else if(cameras.length >= 0){
+                    	  getCamListForMob(cameras.length);
+                    	  scanner.start(cameras[0]);
+
+                      } else {
+                    	  console.error("Camera not found!");
+                      } */
+
+
+                    if (cameras.length > 0) {
+                        getCamList(cameras);
+                        var cam = document.getElementById("startbtn").value;
+                        scanner.start(cameras[cam]);
+                    } else {
+                        console.error("Camera not found!");
+                    }
+                });
+            } else {
+
+                Instascan.Camera.getCameras().then(cameras => {
+                    if (cameras.length > 0) {
+                        getCamList(cameras);
+                        var cam = document.getElementById("startbtn").value;
+
+                        scanner.start(cameras[cam]);
+                    } else {
+                        console.error("Camera not found!");
+                    }
+
+                });
+            }
+            setTimeout(function () {
+                scanner.stop();
+                $('#stopbtn').hide();
+                $('#startbtn').hide();
+                $('#scanimage').show();
+                $('#preview').hide();
+            }, 100000);
+
+            setTimeout(function () {
+                $('#stopbtn').show();
+                $('#startbtn').show();
+            }, 4000);
+
+        }
+
+
+        function CamScan(result) {
+
+            var markers = [{"qrdata": result}];
+            stopWebcam();
+            $.ajax({
+                type: "POST",
+                processData: false,
+                contentType: "application/json; charset=utf-8",
+                url: "scan",
+                data: JSON.stringify({qrdata: markers}),
+                success: function (data) {
+                    if( data.includes("errorpagenew")){
+                        document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
+                        document.getElementById("validate").submit();
+                    } else if(data != null && data != "" && data != "errorpage" && data.includes("new")) {
+                        document.getElementById("username").value = data;
+                        document.getElementById("validate").action = "<%=request.getContextPath()%>/newsucesspage";
+                        document.getElementById("validate").submit();
+                    } else if (data != null && data != "" && data != "errorpage") {
+
+                        document.getElementById("username").value = data;
+                        document.getElementById("validate").action = "<%=request.getContextPath()%>/sucesspage";
+                        document.getElementById("validate").submit();
+                    } else if (data == "errorpage") {
+                        document.getElementById("validate").action = "<%=request.getContextPath()%>/errorpage";
+                        document.getElementById("validate").submit();
+                    } else {
+                        document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
+                        document.getElementById("validate").submit();
+                    }
+
+                }
+            });
+        }
+
+
+        function stopWebcam() {
+
+            scanner.stop();
+
+            $('#stopbtn').hide();
+            $('#startbtn').hide();
+            $('#preview').hide();
+            $('#scanimage').show();
+        }
+        function changeWebcam() {
+            var cam = document.getElementById("startbtn").value;
+
+            $('#preview').show();
+
+            scanner.addListener('scan', function (content) {
+
+                CamScan(content);
+
+            });
+            Instascan.Camera.getCameras().then(cameras => {
+
+                scanner.start(cameras[cam]);
+
+            });
+
+        }
+
+        function getCamList(camaras) {
+
+            var camopt = document.getElementById("startbtn");
+
+
+            var camlen = camopt.options.length;
+
+
+            if (isMobile) {
+                camopt.options[camopt.options.length - camlen] = new Option("Front Camera", 0);
+            } else {
+
+                camopt.options[camopt.options.length - camlen] = new Option(camaras[0].name, 0);
+            }
+
+            if (camaras.length > camlen) {
+
+                var isBack = true;
+                for (var i = camlen; i < camaras.length; i++) {
+                    if (isMobile) {
+                        let cname = camaras[i].name;
+                        if (isBack) {
+
+                            if (cname.includes("back")) {
+
+                                camopt.options[camopt.options.length] = new Option("Back Camera", i);
+                                isBack = false;
+
+                            }
+
+                        }
+                    } else {
+                        camopt.options[camopt.options.length] = new Option(camaras[i].name, i);
+                    }
+
+
+                }
+            }
+        }
+
+        window.onload = function () {
+
+            var reloadval = sessionStorage.getItem("camv");
+            var reloaded = sessionStorage.getItem("reload");
+            if (reloaded) {
+                if (reloadval == 0) {
+
+                    sessionStorage.removeItem("camv");
+                    sessionStorage.removeItem("reload");
+                    startWebcam();
+                }
+            }
+        }
+
+
+        function reloadP() {
+
+            if (isMobile) {
+
+                var camv = document.getElementById("startbtn").value;
+
+                if (camv == 0) {
+                    sessionStorage.setItem("camv", camv);
+                    sessionStorage.setItem("reload", true);
+                    document.location.reload();
+                } else {
+
+                    changeWebcam();
+                }
+
+            } else {
+                changeWebcam();
+            }
+        }
+
+    </script>
+
+
+
+
+
+<%--<div class="space1">--%>
     <%--</div>--%>
 
     <%-- </form> --%>
