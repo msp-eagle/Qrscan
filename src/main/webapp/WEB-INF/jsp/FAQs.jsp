@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
-    <!--     <script type = "text/javascript">
+     <script type = "text/javascript">
         history.pushState(null, document.title, location.href);
         history.back();
         history.forward();
@@ -45,7 +45,7 @@
         };
         </script> -->
 
-    <!-- <script type="text/javascript">
+ <script type="text/javascript">
         history.pushState(null, null, location.href);
         history.back();
         history.forward();
@@ -76,7 +76,7 @@
             }
         }
     </script>
- -->
+
     <script>
         function myFunction() {
             var input, filter, table, tr, td, i, txtValue;

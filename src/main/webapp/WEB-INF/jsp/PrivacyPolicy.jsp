@@ -44,7 +44,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!-- END PLUGINS -->
 
-<!--     <script type="text/javascript">
+     <script type="text/javascript">
         history.pushState(null, null, location.href);
         history.back();
         history.forward();
@@ -74,7 +74,7 @@
                 return false;
             }
         }
-    </script> -->
+    </script>
 
 </head>
 <body>

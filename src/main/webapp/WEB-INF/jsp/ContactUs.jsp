@@ -51,7 +51,7 @@
         });
     </script>
 </c:if>
-<%--
+
 <script type="text/javascript">
     history.pushState(null, null, location.href);
     history.back();
@@ -82,7 +82,7 @@
             return false;
         }
     }
-</script>--%>
+</script>
 
 
 <body>

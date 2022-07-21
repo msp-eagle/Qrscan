@@ -73,37 +73,37 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!-- END PLUGINS -->
-    <%--    <script type = "text/javascript">--%>
-    <%--        function preventBack() {--%>
-    <%--            window.history.forward(1);--%>
-    <%--        }--%>
-    <%--        setTimeout("preventBack()", 0);--%>
-    <%--        window.onunload = function () {--%>
-    <%--            null--%>
-    <%--        };--%>
+        <script type = "text/javascript">
+            function preventBack() {
+                window.history.forward(1);
+            }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () {
+                null
+            };
 
-    <%--        document.addEventListener('contextmenu', function(e) {--%>
-    <%--            e.preventDefault();--%>
-    <%--        });--%>
-    <%--        document.onkeypress = function (event) {--%>
-    <%--            event = (event || window.event);--%>
-    <%--            if (event.keyCode == 123) {--%>
-    <%--                return false;--%>
-    <%--            }--%>
-    <%--        }--%>
-    <%--        document.onmousedown = function (event) {--%>
-    <%--            event = (event || window.event);--%>
-    <%--            if (event.keyCode == 123) {--%>
-    <%--                return false;--%>
-    <%--            }--%>
-    <%--        }--%>
-    <%--        document.onkeydown = function (event) {--%>
-    <%--            event = (event || window.event);--%>
-    <%--            if (event.keyCode == 123) {--%>
-    <%--                return false;--%>
-    <%--            }--%>
-    <%--        }--%>
-    <%--    </script>--%>
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });
+            document.onkeypress = function (event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    return false;
+                }
+            }
+            document.onmousedown = function (event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    return false;
+                }
+            }
+            document.onkeydown = function (event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    return false;
+                }
+            }
+       </script>
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/termOfUse.css">
 </head>
