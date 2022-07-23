@@ -116,7 +116,6 @@ public class LoginController {
         qrAuditRepo.save(qr);
         return "errorpage";
     }
-
     @RequestMapping(value = "/notRegerrorpage")
     public String showErrorpage(ModelMap model) {
         QrAudit qr = new QrAudit();

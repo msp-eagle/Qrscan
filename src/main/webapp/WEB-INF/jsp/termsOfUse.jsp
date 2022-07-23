@@ -107,7 +107,6 @@
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/termOfUse.css">
 </head>
-
 <jsp:include page="header.jsp" />
 <div class="">
 <form action="" id="validate" method="post">
@@ -203,7 +202,7 @@
             <p class=MsoNormal><strong>For non-acceptance of PhilID concern:</strong></p>
             <p class=MsoNormal><strong>OLIVER CHANCOCO</strong></p>
             <p class=MsoNormal>Project Development Officer IV</p>
-            <p class=MsoNormal>PhilID Advocacy Unit</p>
+            <p class=MsoNormal>PhilSys Advocacy Unit</p>
             <p class=MsoNormal>Use Case Development and Management Service</p>
             <p class=MsoNormal>PhilSys Registry Office</p>
             <p class=MsoNormal><a href="mailto:o.chancoco@psa.gov.ph" style="color: #01a0e4">o.chancoco@psa.gov.ph </a>
