@@ -116,9 +116,9 @@
                     regarding your experience in the authentication process using the
                     PhilSys &#10004;.
                 </p>
-                <p class=MsoListParagraphCxSpMiddle>lnformation sent through the "Contact Us" and feedback forms shall
+                <p class=MsoListParagraphCxSpMiddle>Information sent through the "Contact Us" and feedback forms shall
                     be
-                    used only to contact us or provide feedback. ln responding to requests, the
+                    used only to contact us or provide feedback. In responding to requests, the
                     information provided may be viewed by various people within the PRO.</p> <br>
 
                 <p class=MsoNormal><b>COLLECTION AND PROCESSING</b></p> <br>

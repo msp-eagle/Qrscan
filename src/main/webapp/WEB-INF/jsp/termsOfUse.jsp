@@ -107,9 +107,11 @@
 
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/termOfUse.css">
 </head>
-<body>
+
+<jsp:include page="header.jsp" />
+<div class="">
 <form action="" id="validate" method="post">
-    <jsp:include page="header.jsp" />    
+
     
     <div style="background-color: #f3f3f3;">
         <div class="container" style="text-align: justify;background-color: #f3f3f3;font-family: 'Arial Black'"><br>
@@ -118,27 +120,26 @@
 
             <h5 style="color: #1f4380;">Chapter 1. ACCEPTANCE OF TERMS</h5><br>
 
-            <p class=MsoNormal>By accessing and using the website, the User ("Relying Party", "Use/') agrees and
+            <p class=MsoNormal>By accessing and using the website, the User ("Relying Party", "User") agrees and
                 consents to comply with the following terms of use of the website ("Service") of the
                 PhilSys Registry Office ("PRO", "the organization", "site" , "we").</p><br>
 
             <h5 style="color: #1f4380;"><b>Chapter 2. DESCRIPTION OF SERVICES</b></h5><br>
 
-            <p class=MsoNormal>The PhilSys &#10004; (read as check) is a website that uses rndustry standard algorithms
-                for
-                relying parties (public and private establishments) to reliably verifo that the information
-                contained in the QR Code found in the cardholder's Philippine ldentification (PhillD) has
+            <p class=MsoNormal>The PhilSys &#10004; (read as check) is a website that uses industry standard algorithms
+                for relying parties (public and private establishments) to reliably verify that the information
+                contained in the QR Code found in the cardholder's Philippine identification (PhillD) has
                 not been tampered with. </p><br>
 
             <h5 style="color: #1f4380;"><b>Chapter 3. RESPONSIBILITY OF PSA</b></h5><br>
 
             <p class=MsoNormal>The Philippine Statistics Authority (PSA) is the primary implementing agency to carry
                 out the provisions of the Republic Act No. 11055 (RA 11055) or the Philippine
-                ldentification System Act. As part of its mandate, the PSA shall issue rules in
+                Identification System Act. As part of its mandate, the PSA shall issue rules in
                 implementation and enhancement of the PhilSys, including, but not limited to
                 registration, authentication, and data governance.</p>
 
-            <p class=MsoNormal>The PSA with the technical assistance of the Department of lnformation and
+            <p class=MsoNormal>The PSA with the technical assistance of the Department of Information and
                 Communications Technology (DICT) shall implement reasonable and appropriate
                 organization and technical security measures in all services of the PhilSys.</p>
 
@@ -154,13 +155,13 @@
                                                               style="color: #01a0e4">https://verify.philsys.gov.ph</a>,
                 we store log information, including
                 date and time of visit to the site, the first name of the registered person being
-                authenticated, and the result of the authenticalion. We also collect contact details when
+                authenticated, and the result of the authentication. We also collect contact details when
                 you use our Contact Us and Feedback forms.</p><br>
 
             <h5 style="color: #1f4380;"><b>Chapter 5. LIMITED AND PERMITTED USE </b></h5><br>
 
             <p class=MsoNormal>By using the website, you are granted a non-exclusive, non-transferable, revocable
-                license (a) to access and use the website skictly with this agreement; and (b) to use this
+                license (a) to access and use the website strictly with this agreement; and (b) to use this
                 site solely for online verification of the PhillD owner's identity.</p><br>
 
             <h5 style="color: #1f4380;"><b>Chapter 6. RESERVATION OF RIGHTS</b></h5><br>
@@ -170,7 +171,7 @@
 
             <p class=MsoNormal>The PRO reserves its rights such as, but not limited to, change of features of the
                 Service, blockage of lP addresses or browsers, immediate termination or suspension of
-                your access, without furlher warnings.</p><br>
+                your access, without further warnings.</p><br>
 
             <h5 style="color: #1f4380;"><b>Chapter 7. PENAL PROVISIONS</b></h5><br>
 
@@ -181,7 +182,7 @@
                 Thousand Philippine Pesos (&#8369; 500,000.00), or both, at the discretion of the court.
                 Exclusive of penal provisions from RA 10173 or the Data Privacy Act of 2012.</p>
 
-            <p class=MsoNormal>Any information obtained as a result of unlaMul use of the PhilSys &#10004; shall be
+            <p class=MsoNormal>Any information obtained as a result of unlawful use of the PhilSys &#10004; shall be
                 inadmissible in any judicial, quasi-judicial or administrative proceeding.</p><br>
 
             <h5 style="color: #1f4380;"><b>Chapter 8. PRIVACY AND PROTECTION OF PERSONAL INFORMATION</b></h5><br>
@@ -237,16 +238,9 @@
         </div>
 
     </div>
-
-
-
-    <!-- footer -->
-    </div>
-
-    
 </form>
-
- <jsp:include page="footer.jsp"/>
+</div>
+<jsp:include page="footer.jsp"/>
  
  
 </body>

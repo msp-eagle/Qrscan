@@ -60,10 +60,12 @@
     </script>
 </head>
 <body>
+<jsp:include page="header.jsp" />
+<div class="contain">
 <form action="" id="validate" method="post">
     <input type="hidden" id="username" name="username">
 
-<jsp:include page="header.jsp" />
+
     <div class="background">
 
 
@@ -148,6 +150,7 @@
 
     </div>
 </form>
+</div>
   <jsp:include page="footer.jsp"/>
 </body>
 </html>

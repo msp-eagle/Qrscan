@@ -831,8 +831,8 @@ strong {
 
 .bt {
     padding: 0px;
-    color: #1f4380;
-    font-family: Arial;
+    color: #1f4380 !important;
+    font-family: Arial !important;
     font-weight: bold;
 
 }

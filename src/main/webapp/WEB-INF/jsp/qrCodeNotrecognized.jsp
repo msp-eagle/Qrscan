@@ -96,8 +96,10 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/qrCodeNotRecognized.css">
 </head>
 <body>
-<form action="" id="validate" method="post">
 <jsp:include page="header.jsp" />
+<div class="contain">
+<form action="" id="validate" method="post">
+
     <div class="background">
         <!--<div class="container-fluid">-->
         <!--<img style="
@@ -197,11 +199,11 @@
 
         </div>
 
-
+    </div>
         <!-- footer -->
        
 </form>
-
+</div>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

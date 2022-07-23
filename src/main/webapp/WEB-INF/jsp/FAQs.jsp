@@ -42,7 +42,7 @@
         window.onpopstate = function () {
             history.go(1);
         };
-        </script> -->
+        </script>
 
  <script type="text/javascript">
         history.pushState(null, null, location.href);
@@ -102,7 +102,7 @@
 <body>
 <div class="faq">
 <form action="" id="validate" method="post">
-         <jsp:include page="header.jsp" /> 
+         <jsp:include page="header.jsp" />
          <div style="background-color: #f3f3f3;">
         <div class="accordion accordion-flush " id="myAccordion" class="faq"><br>
             <div class="container">

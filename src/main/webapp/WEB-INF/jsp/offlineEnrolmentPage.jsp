@@ -43,20 +43,19 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
 
     <!--  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>  -->
-    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
-<%--        <script type="text/javascript" src="js/plugins/instascan.min.js"></script>--%>
-    
+<%--    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>--%>
+            <script type="text/javascript" src="js/instascan.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jspcss/style.css" />
     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
+<%--
 <script type="text/javascript">
     history.pushState(null, null, location.href);
     history.back();
@@ -88,11 +87,1196 @@
         }
     }
 </script>
-
+--%>
 
 
 
 <!-- END PLUGINS -->
+<script type="text/javascript">
+    window.document.onkeydown = function (e) {
+        if (!e) {
+            e = event;
+        }
+        if (e.keyCode == 27) {
+            lightbox_close();
+        }
+    }
+
+    function lightbox_open() {
+        var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+        window.scrollTo(0, 0);
+        document.getElementById('light').style.display = 'block';
+        document.getElementById('fade').style.display = 'block';
+        lightBoxVideo.play();
+    }
+
+    function lightbox_close() {
+        var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+        document.getElementById('light').style.display = 'none';
+        document.getElementById('fade').style.display = 'none';
+        lightBoxVideo.pause();
+    }
+
+    var scanner;
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    function startWebcam() {
+
+        scanner = new Instascan.Scanner(
+            {
+                video: document.getElementById('preview'),
+
+
+            }
+        );
+
+        $('#preview').show();
+        $('#scanimage').hide();
+
+
+        scanner.addListener('scan', function (content) {
+
+            if(!isMobile){
+                CamScan(content);
+            }
+
+        });
+
+        if (navigator.userAgent.indexOf("Android") != -1) {
+            Instascan.Camera.getCameras().then(cameras => {/*
+		          if(cameras.length >= 1){
+		        	  getCamListForMob(cameras.length);
+		              scanner.start(cameras[1]);
+		          } else if(cameras.length >= 0){
+		        	  getCamListForMob(cameras.length);
+		        	  scanner.start(cameras[0]);
+
+		          } else {
+		        	  console.error("Camera not found!");
+		          } */
+
+
+                if (cameras.length > 0) {
+                    getCamList(cameras);
+                    var cam = document.getElementById("startbtn").value;
+                    scanner.start(cameras[cam]);
+                } else {
+                    console.error("Camera not found!");
+                }
+            });
+        } else {
+
+            Instascan.Camera.getCameras().then(cameras => {
+                if (cameras.length > 0) {
+                    getCamList(cameras);
+                    var cam = document.getElementById("startbtn").value;
+
+                    scanner.start(cameras[cam]);
+                } else {
+                    console.error("Camera not found!");
+                }
+
+            });
+        }
+        setTimeout(function () {
+            scanner.stop();
+            $('#stopbtn').hide();
+            $('#startbtn').hide();
+            $('#scanimage').show();
+            $('#preview').hide();
+        }, 100000);
+
+        setTimeout(function () {
+            $('#stopbtn').show();
+            $('#startbtn').show();
+        }, 4000);
+
+
+    }
+
+
+    function CamScan(result) {
+
+        var markers = [{"qrdata": result}];
+        stopWebcam();
+        $.ajax({
+            type: "POST",
+            processData: false,
+            contentType: "application/json; charset=utf-8",
+            url: "scan",
+            data: JSON.stringify({qrdata: markers}),
+            success: function (data) {
+                if( data.includes("errorpagenew")){
+                    document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
+                    document.getElementById("validate").submit();
+                } else if(data != null && data != "" && data != "errorpage" && data.includes("new")) {
+                    document.getElementById("username").value = data;
+                    document.getElementById("validate").action = "<%=request.getContextPath()%>/newsucesspage";
+                    document.getElementById("validate").submit();
+                } else if (data != null && data != "" && data != "errorpage") {
+
+                    document.getElementById("username").value = data;
+                    document.getElementById("validate").action = "<%=request.getContextPath()%>/sucesspage";
+                    document.getElementById("validate").submit();
+                } else if (data == "errorpage") {
+                    document.getElementById("validate").action = "<%=request.getContextPath()%>/errorpage";
+                    document.getElementById("validate").submit();
+                } else {
+                    document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
+                    document.getElementById("validate").submit();
+                }
+
+            }
+        });
+    }
+
+
+    function stopWebcam() {
+
+        scanner.stop();
+
+        $('#stopbtn').hide();
+        $('#startbtn').hide();
+        $('#preview').hide();
+        $('#scanimage').show();
+    }
+    function changeWebcam() {
+        var cam = document.getElementById("startbtn").value;
+
+        $('#preview').show();
+
+        scanner.addListener('scan', function (content) {
+
+            CamScan(content);
+
+        });
+        Instascan.Camera.getCameras().then(cameras => {
+
+            scanner.start(cameras[cam]);
+
+        });
+
+    }
+
+    function getCamList(camaras) {
+
+        var camopt = document.getElementById("startbtn");
+
+
+        var camlen = camopt.options.length;
+
+
+        if (isMobile) {
+            camopt.options[camopt.options.length - camlen] = new Option("Front Camera", 0);
+        } else {
+
+            camopt.options[camopt.options.length - camlen] = new Option(camaras[0].name, 0);
+        }
+
+        if (camaras.length > camlen) {
+
+            var isBack = true;
+            for (var i = camlen; i < camaras.length; i++) {
+                if (isMobile) {
+                    let cname = camaras[i].name;
+                    if (isBack) {
+
+                        if (cname.includes("back")) {
+
+                            camopt.options[camopt.options.length] = new Option("Back Camera", i);
+                            isBack = false;
+
+                        }
+
+                    }
+                } else {
+                    camopt.options[camopt.options.length] = new Option(camaras[i].name, i);
+                }
+
+
+            }
+        }
+    }
+
+    window.onload = function () {
+
+        var reloadval = sessionStorage.getItem("camv");
+        var reloaded = sessionStorage.getItem("reload");
+        if (reloaded) {
+            if (reloadval == 0) {
+
+                sessionStorage.removeItem("camv");
+                sessionStorage.removeItem("reload");
+                startWebcam();
+            }
+        }
+    }
+
+
+    function reloadP() {
+
+        if (isMobile) {
+
+            var camv = document.getElementById("startbtn").value;
+
+            if (camv == 0) {
+                sessionStorage.setItem("camv", camv);
+                sessionStorage.setItem("reload", true);
+                document.location.reload();
+            } else {
+
+                changeWebcam();
+            }
+
+        } else {
+            changeWebcam();
+        }
+    }
+
+</script>
+<style type="text/css">
+    .background {
+        background: #f7f5f5;
+        hight: 100%;
+        width: 100%;
+
+    }
+
+
+    .button-column {
+        flex-direction: column;
+    }
+
+    .button--center {
+
+        align-content: center;
+        margin-bottom:30px ;
+
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .video--center {
+        transform: scaleX(-1);
+        display: inline-block;
+        padding-right: 47px;
+    }
+
+    .spacer {
+        padding: 10px;
+    }
+
+    .w-150 {
+        width: 300px;
+        background-color: #1f4380;
+        color: white;
+        text-align: center;
+    }
+
+    .button-p10 {
+        padding: 10px;
+        cursor: pointer;
+        min-height: 50px;
+        border: 3px solid #f1b608;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        border-radius: 15px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-background {
+        font-size: 16px;
+        font-family: Arial;
+    }
+
+    .text-sub-heading-background {
+        font-size: 18px;
+        font-family: Arial;
+        /*font-family: gothem;*/
+    }
+
+    .font-bold {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    .bold {
+        font-weight: 900;
+    }
+
+    .font-bold1 {
+
+        font-weight: bold;
+    }
+
+    .heading {
+        font-size: 16px;
+        text-align: center;
+        /*  font-weight: 500; */
+        color: #1f4380;
+    }
+
+
+    .blue-color {
+        color: #1f4380;
+    }
+
+    .p-10 {
+        padding: 10px;
+    }
+
+    a:link, a:visited {
+
+        color: white;
+        /*padding: 15px 25px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    /*.footer--container{
+
+      !*background-image: url(https://uat.mspsandbox.com/pre-registration-ui/pre-registration/assets/img/footer.png) ;*!
+     !* background-image: url(https://register.philsys.gov.ph/pre-registration-ui/pre-registration/assets/img/footer.png);*!
+    background-color: #1f4380;
+      background-repeat :no-repeat;
+
+      background-size: cover;
+    }*/
+
+    @media (max-width: 500px) {
+        .version-txt {
+            font-size: 8px;
+            font-family: Arial;
+            font-weight: 50;
+            display: block;
+            padding-bottom: -200px;
+
+        }
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+        .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+        .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+        .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+        .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+        .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+        .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+        .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+        .header--logo1 {
+            height: 90px;
+            width: 90%;
+            margin-left: 15px;
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+    }
+
+
+    /*
+      ##Device = Desktops
+      ##Screen = 1281px to higher resolution desktops
+    */
+
+    @media (min-width: 1281px) {
+
+        /* CSS */
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+    }
+
+    /*
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+
+        /* CSS */
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+
+    }
+
+    /*
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* CSS */
+        .header--logo1 {
+            height: 90px;
+            width: 90%;
+            margin-left: 15px;
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+        .version-txt[_ngcontent-c8] {
+            font-size: 13px;
+            font-weight: 200;
+            display: block;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            color: white;
+        }
+
+        .footer-logo_flex {
+            max-width: 150px;
+        }
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+        .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+        .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+        .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+        .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+        .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+        .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+        .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+        header--logo1 {
+            height: 115px;
+            width: 100%;
+        }
+
+        .footer-logo_flex {
+            max-width: 150px;
+        }
+
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+
+        /* CSS */
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+        .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+        .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+        .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+        .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+        .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+        .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+        .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+        .header--logo1 {
+            width: 74%;
+            margin-left: 63px;
+
+        }
+    }
+
+    /*
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+        /* CSS */
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+        .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+        .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+        .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+        .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+        .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+        .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+        .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+        .header--logo1 {
+            width: 74%;
+            margin-left: 63px;
+
+        }
+    }
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    /*
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+
+    @media (min-width: 481px) and (max-width: 767px) {
+
+        /* CSS */
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+
+        .version-txt[_ngcontent-c8] {
+            font-size: 8px;
+            font-weight: 50;
+            display: block;
+            text-align: center;
+            padding-bottom: 6px;
+            padding-top: 6px;
+        }
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+        .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+        .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+        .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+        .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+        .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+        .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+        .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+        header--logo1 {
+            height: 115px;
+            width: 100%;
+        }
+    }
+
+    /*
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+
+    @media (min-width: 320px) and (max-width: 480px) {
+
+        /* CSS */
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2,
+        .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+        .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5,
+        .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+        .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+        .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+        .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+        .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+            position: relative;
+            min-height: 1px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .version-txt[_ngcontent-c8] {
+            font-size: 8px;
+            font-weight: 50;
+            display: block;
+            text-align: center;
+            padding-bottom: 6px;
+            padding-top: 6px;
+        }
+
+        .video--center {
+            transform: scaleX(-1);
+            display: inline-block;
+            padding-right: 1px;
+            width: 100%;
+        }
+
+        .header--logo1 {
+            height: 90px;
+            width: 90%;
+            margin-left: 15px;
+
+
+        }
+    }
+
+</style>
+
+
+<style type="text/css">
+
+    :root {
+        --p-color: #2670b6;
+        --s-color: #15159c;
+        --pbg-color: #fff;
+        --sbg-color: #ff0000;
+        --a-color: #fff;
+        --c-color:: ffffff;
+
+
+    }
+
+    a {
+        font-family: Arial;
+        color: var(--a-color) !important;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+    /*  body container css*/
+    /*.mt-4,
+    .my-4 {
+      margin-top: 1.5rem !important;
+    }*/
+
+    :root {
+        --font-size: 15px;
+        --primary--color: #ffffff;
+        --primary--light--color: #ffffff;
+        --secondary--color: #ffffff;
+        --secondary--light--color: #ffffff;
+        --primary--background--color: #1f4380;
+        --font-h1: calc(--font-size + 5px);
+        --heading--font-size: 1.5rem;
+        --white-color: white;
+
+    }
+
+    /*  header container css*/
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+
+
+
+    .nav-border > ul > li:first-child {
+        border-left: 1px solid gray;
+    }
+
+    .nav-border > ul > li {
+        border-right: 1px solid gray;
+    }
+
+    .middle-header {
+        background: white;
+    }
+
+    header--logo.bottom-banner {
+        height: 140px;
+        background: linear-gradient(to right, #226da5 0%, #2872c1 18%, #163d6a 100%);
+    }
+
+
+    /* .spacer {
+      flex: 1 1 auto;
+    } */
+    .list-item > .mat-list-item {
+        color: #fff !important;
+        font-size: 20px !important;
+        line-height: 1.42857143 !important;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .sidenav-list > .mat-list-item {
+        color: black;
+        text-transform: uppercase;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 2px;
+    }
+
+
+
+    /*
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+
+    @media (min-width: 481px) and (max-width: 767px) {
+
+        /* CSS */
+        .header--logo1 {
+            height: 90px;
+            width: 90%;
+            margin-left: 15px;
+
+
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+    }
+
+
+    @media (max-width: 670px) {
+
+
+        .header--logo1 {
+            height: 90px;
+            width: 90%;
+            margin-left: 15px;
+
+
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+
+    }
+
+    .h-140 > a > img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .header-middle-content {
+        padding: 0px 10px;
+    }
+
+    .header-slider {
+        background: #465ab3;
+        height: 460px;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .slider-padding {
+        padding: 5px 5px;
+    }
+
+    .header-middle-content h6, .header-middle-content h2 {
+
+
+        padding: 4px 2px;
+        color: white;
+        height: 10%;
+        width: 100%;
+    }
+
+
+    .nav-item > a {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-weight: italic;
+    }
+
+
+    .header-middle-content > h4 {
+        font-style: bold;
+    }
+
+
+
+    /* The container <div> - needed to position the dropdown content */
+
+    /* Dropdown Content (Hidden by Default) */
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    a.ex1:hover, a.
+        /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        color: black;
+    }
+
+
+    .dropdown-item:focus, .dropdown-item:hover {
+        color: gray !important;
+        text-decoration: none;
+        background-color: black !important;
+    }
+
+
+    @media (min-width: 992px) {
+        .dropdown-menu .dropdown-toggle:after {
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
+            width: auto;
+            height: auto;
+        }
+
+        .dropdown-menu .dropdown-menu {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .dropdown-menu li {
+            position: relative;
+        }
+
+        .nav-item .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+
+        .nav-item .submenu-left {
+            right: 100%;
+            left: auto;
+        }
+
+        .dropdown-menu > li:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown-menu > li:hover > .submenu {
+            display: block;
+        }
+    }
+
+    /* bootstab*/
+
+
+    /*end*/
+    footer-logo-space.main-footer {
+        display: flex;
+        justify-content: center;
+        font-family: Arial;
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        position: fixed;
+        bottom: -9px;
+        width: 100%;
+        z-index: -1;
+        margin-bottom: 2px;
+        background: white;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        background-color: #f7f5f5;
+
+    }
+
+    a:link, a:visited {
+        color: white;
+        /*padding: 15px 25px;*/
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+
+    .footer-background > .container {
+        padding-top: 25px;
+    }
+
+    .w-150 {
+        width: 150px;
+        background-color: #1f4380;
+        color: white;
+        border: 3px solid #1f4380;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        min-height: 50px;
+    }
+
+    button-p10 {
+        padding: 10px;
+        cursor: pointer;
+        min-height: 50px;
+        border: 3px solid #1f4380;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        border-radius: 5px;
+    }
+
+
+    #stopbtn, #startbtn, #preview {
+        display: none;
+    }
+
+
+    .text-font-size-welcome {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.0;
+    }
+
+    #fade {
+        display: none;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .80;
+        filter: alpha(opacity=80);
+    }
+
+    #light {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        max-width: 1000px;
+        max-height: 37px;
+        margin-left: -500px;
+        margin-top: -270px;
+        /*border: 2px solid #FFF;*/
+        background: #FFF;
+        z-index: 1002;
+        overflow: visible;
+    }
+
+    #boxclose {
+        float: right;
+        cursor: pointer;
+        color: #fff;
+        border: 1px solid #AEAEAE;
+        border-radius: 3px;
+        background: #222222;
+        font-size: 31px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 0px;
+        padding: 11px 3px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        z-index: 1002;
+        opacity: 0.9;
+    }
+
+    .boxclose:before {
+        content: "×";
+    }
+
+    #fade:hover ~ #boxclose {
+        display: none;
+    }
+
+    .test:hover ~ .test2 {
+        display: none;
+    }
+
+
+    /*
+      ##Device = Desktops
+      ##Screen = 1281px to higher resolution desktops
+    */
+
+    @media (min-width: 1281px) {
+
+        /* CSS */
+
+    }
+
+    /*
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+
+        /* CSS */
+
+    }
+
+    /*
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* CSS */
+        /* .mat-toolbar{
+         max-width: calc(100% - 3%);
+        } */
+
+
+    }
+
+
+    /*
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+        /* CSS */
+
+    }
+
+    /*
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+
+    @media (min-width: 481px) and (max-width: 767px) {
+
+        /* CSS */
+
+    }
+
+    /*
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+
+    @media (min-width: 320px) and (max-width: 480px) {
+
+        /* CSS */
+
+    }
+
+    @media (max-width: 670px) {
+        .header--logo {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 170px;
+            height: 50px;
+            margin-top: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .mat-container--header {
+            background-color: #1f4380;
+            height: 50px;
+        }
+    }
+
+    .btn video {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+
+    }
+</style>
+
 
 <body>
 <form action="" id="validate" method="post">
@@ -106,64 +1290,20 @@
          width: 100%;
          height: 100px;" src="assets/img/thumbmark_logo.png" />-->
 
-    <style>
-        #radio5,#scan-button {
-           display:none;
-        }
 
-    </style>
     <div class="row nomargin">
 
         <div class=" col-md-6 col-sm-12 col-lg-6">
             <div class="mx-auto">
-
-
                 <br>
                 <div class="text-sub-heading-background blue-color  text-center text-font-size-welcome font-bold"
                      style="text-shadow: 1px 0 #1f4380;">Welcome to the
                 </div>
                 <p style="text-align:center;"><img src="img/PhilSys_Logo-removebg-preview.png" style="width: 300px;">
                 </p>
-                <div id="showan">
-                <p style="text-align: center" ><img src="img/Click QR Code Logo.png" style="width: 200px;" onclick="startWebcam2()"></p>
-                </div>
-
-
-                   <div id="radio5" style="color:#1f4380;font-family: gowtham;">
-                       <h3 style="color: #1f4380;">which sector are you from</h3>
-                       <div class="form-check">
-                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                           <label class="form-check-label" for="flexRadioDefault1">
-                              Government
-                           </label>
-                       </div>
-                       <div class="form-check">
-                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                           <label class="form-check-label" for="flexRadioDefault2">
-                              financial
-                           </label>
-                       </div>
-
-                       <div class="form-check">
-                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                           <label class="form-check-label" for="flexRadioDefault2">
-                               Small Business
-                           </label>
-                       </div>
-
-                       <div class="form-check">
-                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                           <label class="form-check-label" for="flexRadioDefault2">
-                               Individuals
-                           </label>
-                       </div>
-                   </div>
-                <div id="scan-button">
-                    <p style="text-align: center"><button type="button" class="btn btn-secondary btn-lg" style="background-color: #1f4380;width:100px;" onclick="startWebcam()">Scan</button></p>
-                </div>
-
+                <p style="text-align:center;"><img src="img/Click QR Code Logo.png" style="width: 200px;"
+                                                   onclick="startWebcam()"></p>
             </div>
-
             <div id="scanimage">
                 <div class=" button-column text-center button--center ">
                     <%--                <button class="w-150 button-p10" style=" font-family: Arial;" onclick="startWebcam();">--%>
@@ -295,263 +1435,17 @@
 
 
     </div>
-    
-    
-   <jsp:include page="footer.jsp"/>
 
 
-    <script type="text/javascript">
-        window.document.onkeydown = function (e) {
-            if (!e) {
-                e = event;
-            }
-            if (e.keyCode == 27) {
-                lightbox_close();
-            }
-        }
+    <jsp:include page="footer.jsp"/>
 
-        function lightbox_open() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-            window.scrollTo(0, 0);
-            document.getElementById('light').style.display = 'block';
-            document.getElementById('fade').style.display = 'block';
-            lightBoxVideo.play();
-        }
 
-        function lightbox_close() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-            document.getElementById('light').style.display = 'none';
-            document.getElementById('fade').style.display = 'none';
-            lightBoxVideo.pause();
-        }
 
-        var scanner;
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-        function startWebcam2() {
-            document.getElementById("showan").style.display="none";
-            document.getElementById("radio5").style.marginLeft = '300px';
-            document.getElementById("radio5").style.display = 'block';
-            document.getElementById("scan-button").style.display = 'block';
-            document.getElementById("scan-button").style.marginTop = '20px';
 
-        }
-        function startWebcam() {
-            document.getElementById("radio5").style.display = 'none';
-            document.getElementById("scan-button").style.display = 'none';
-            scanner = new Instascan.Scanner(
-                {
-                    video: document.getElementById('preview'),
-                }
-            );
 
-            $('#preview').show();
-            $('#scanimage').hide();
 
-
-            scanner.addListener('scan', function (content) {
-
-                CamScan(content);
-
-            });
-
-            if (navigator.userAgent.indexOf("Android") != -1) {
-                Instascan.Camera.getCameras().then(cameras => {/*
-                      if(cameras.length >= 1){
-                    	  getCamListForMob(cameras.length);
-                          scanner.start(cameras[1]);
-                      } else if(cameras.length >= 0){
-                    	  getCamListForMob(cameras.length);
-                    	  scanner.start(cameras[0]);
-
-                      } else {
-                    	  console.error("Camera not found!");
-                      } */
-
-
-                    if (cameras.length > 0) {
-                        getCamList(cameras);
-                        var cam = document.getElementById("startbtn").value;
-                        scanner.start(cameras[cam]);
-                    } else {
-                        console.error("Camera not found!");
-                    }
-                });
-            } else {
-
-                Instascan.Camera.getCameras().then(cameras => {
-                    if (cameras.length > 0) {
-                        getCamList(cameras);
-                        var cam = document.getElementById("startbtn").value;
-
-                        scanner.start(cameras[cam]);
-                    } else {
-                        console.error("Camera not found!");
-                    }
-
-                });
-            }
-            setTimeout(function () {
-                scanner.stop();
-                $('#stopbtn').hide();
-                $('#startbtn').hide();
-                $('#scanimage').show();
-                $('#preview').hide();
-            }, 100000);
-
-            setTimeout(function () {
-                $('#stopbtn').show();
-                $('#startbtn').show();
-            }, 4000);
-
-        }
-
-
-        function CamScan(result) {
-
-            var markers = [{"qrdata": result}];
-            stopWebcam();
-            $.ajax({
-                type: "POST",
-                processData: false,
-                contentType: "application/json; charset=utf-8",
-                url: "scan",
-                data: JSON.stringify({qrdata: markers}),
-                success: function (data) {
-                    if( data.includes("errorpagenew")){
-                        document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
-                        document.getElementById("validate").submit();
-                    } else if(data != null && data != "" && data != "errorpage" && data.includes("new")) {
-                        document.getElementById("username").value = data;
-                        document.getElementById("validate").action = "<%=request.getContextPath()%>/newsucesspage";
-                        document.getElementById("validate").submit();
-                    } else if (data != null && data != "" && data != "errorpage") {
-
-                        document.getElementById("username").value = data;
-                        document.getElementById("validate").action = "<%=request.getContextPath()%>/sucesspage";
-                        document.getElementById("validate").submit();
-                    } else if (data == "errorpage") {
-                        document.getElementById("validate").action = "<%=request.getContextPath()%>/errorpage";
-                        document.getElementById("validate").submit();
-                    } else {
-                        document.getElementById("validate").action = "<%=request.getContextPath()%>/notRegerrorpage";
-                        document.getElementById("validate").submit();
-                    }
-
-                }
-            });
-        }
-
-
-        function stopWebcam() {
-            document.getElementById("showan").style.display="block";
-            scanner.stop();
-
-            $('#stopbtn').hide();
-            $('#startbtn').hide();
-            $('#preview').hide();
-            $('#scanimage').show();
-        }
-        function changeWebcam() {
-            var cam = document.getElementById("startbtn").value;
-
-            $('#preview').show();
-
-            scanner.addListener('scan', function (content) {
-
-                CamScan(content);
-
-            });
-            Instascan.Camera.getCameras().then(cameras => {
-
-                scanner.start(cameras[cam]);
-
-            });
-
-        }
-
-        function getCamList(camaras) {
-
-            var camopt = document.getElementById("startbtn");
-
-
-            var camlen = camopt.options.length;
-
-
-            if (isMobile) {
-                camopt.options[camopt.options.length - camlen] = new Option("Front Camera", 0);
-            } else {
-
-                camopt.options[camopt.options.length - camlen] = new Option(camaras[0].name, 0);
-            }
-
-            if (camaras.length > camlen) {
-
-                var isBack = true;
-                for (var i = camlen; i < camaras.length; i++) {
-                    if (isMobile) {
-                        let cname = camaras[i].name;
-                        if (isBack) {
-
-                            if (cname.includes("back")) {
-
-                                camopt.options[camopt.options.length] = new Option("Back Camera", i);
-                                isBack = false;
-
-                            }
-
-                        }
-                    } else {
-                        camopt.options[camopt.options.length] = new Option(camaras[i].name, i);
-                    }
-
-
-                }
-            }
-        }
-
-        window.onload = function () {
-
-            var reloadval = sessionStorage.getItem("camv");
-            var reloaded = sessionStorage.getItem("reload");
-            if (reloaded) {
-                if (reloadval == 0) {
-
-                    sessionStorage.removeItem("camv");
-                    sessionStorage.removeItem("reload");
-                    startWebcam();
-                }
-            }
-        }
-
-
-        function reloadP() {
-
-            if (isMobile) {
-
-                var camv = document.getElementById("startbtn").value;
-
-                if (camv == 0) {
-                    sessionStorage.setItem("camv", camv);
-                    sessionStorage.setItem("reload", true);
-                    document.location.reload();
-                } else {
-
-                    changeWebcam();
-                }
-
-            } else {
-                changeWebcam();
-            }
-        }
-
-    </script>
-
-
-
-
-
-<%--<div class="space1">--%>
+    <%--<div class="space1">--%>
     <%--</div>--%>
 
     <%-- </form> --%>

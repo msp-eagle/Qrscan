@@ -39,7 +39,7 @@ public class DBConfiguration {
 
         if (sOsName.startsWith("Windows")) {
             System.out.println("WINDOWS OS");
-            propertyFile = new File("D:\\CONFIGURATION\\PSA.conf");
+            propertyFile = new File("D:\\Aarif\\QrScan\\CONFIGURATION\\PSA.conf");
         } else {
 
             if ((sOsName.startsWith("Linux")) || (sOsName.startsWith("Mac")) || (sOsName.startsWith("HP-UX"))) {
